@@ -7,9 +7,9 @@ public class BulletLife : MonoBehaviour
     public float Speed = 0.05f;
 
     void FixedUpdate()
-    { 
+    {
         transform.Translate(Vector2.right * Speed);
-        Destroy(gameObject,1.2f); 
+        Destroy(gameObject, 1.2f);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -31,7 +31,8 @@ public class BulletLife : MonoBehaviour
 
         if (coll.gameObject.tag == "Environment")
         {
-            if (coll.gameObject.GetComponent<DestructibleWall>() != null) {
+            if (coll.gameObject.GetComponent<DestructibleWall>() != null)
+            {
                 Destroy(coll.gameObject);
             }
             Destroy(gameObject);

@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 1393896785003572893}
   - component: {fileID: -4575779773267849266}
   - component: {fileID: 8124210527876159285}
-  - component: {fileID: 4620249736018191623}
+  - component: {fileID: 1962785647}
   m_Layer: 0
   m_Name: PlayerAlexflames
   m_TagString: Player
@@ -479,7 +479,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!81 &4620249736018191623
+--- !u!81 &1962785647
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
