@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6129292306047022645}
   - component: {fileID: 1804933526}
   - component: {fileID: 6191924688952216039}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HeroBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4bda4ebe4f4ed45b514d3690867755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.3
+  Speed: 18
 --- !u!114 &6129292306047022645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 6191924689547157749}
   - component: {fileID: 6191924689547157748}
   - component: {fileID: 6191924689547157643}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: HeroBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
