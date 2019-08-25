@@ -5,6 +5,9 @@ using System;
 
 public class CameraFollow : MonoBehaviour
 {
+    [SerializeField]
+    float cameraMoveSpeed = 2f;
+
     private Func<Vector3> GetCameraFollowPositionFunc;
     public void Setup(Func<Vector3> GetCameraFollowPositionFunc)
     {
@@ -17,7 +20,7 @@ public class CameraFollow : MonoBehaviour
         cameraFollowPosition.z = transform.position.z;
         Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
         float distance = Vector3.Distance(cameraFollowPosition, transform.position);
-        float cameraMoveSpeed = 1f;
+        
         if (distance > 0)
         {
             Vector3 newCameraPosition = transform.position + cameraMoveDir * distance * cameraMoveSpeed * Time.deltaTime;
@@ -28,6 +31,5 @@ public class CameraFollow : MonoBehaviour
             }
             transform.position = new Vector3(Mathf.Clamp(newCameraPosition.x, -10f, 10f), Mathf.Clamp(newCameraPosition.y, -10f, 10f), transform.position.z);
         }
-
     }
 }
