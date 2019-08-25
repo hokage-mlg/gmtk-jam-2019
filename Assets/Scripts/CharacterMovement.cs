@@ -15,6 +15,8 @@ public class CharacterMovement : MonoBehaviour
     private AudioSource noise1;
     private AudioSource noise2;
 
+    private Vector3 lastMoveDir;
+
     private void Start()
     {
         sounds = GetComponents<AudioSource>();
@@ -28,6 +30,7 @@ public class CharacterMovement : MonoBehaviour
     {
         Movement();
         Rotation();
+        HandleDash();
     }
     private void Rotation()
     {
@@ -45,6 +48,7 @@ public class CharacterMovement : MonoBehaviour
         if (direction.magnitude > 1)
         {
             direction.Normalize();
+            
         }
         if (anim != null)
         {
@@ -61,6 +65,37 @@ public class CharacterMovement : MonoBehaviour
                 anim.Play("HeroWalking");
             }
         }
-        transform.Translate(direction * speed * Time.deltaTime, Space.World);
-    }   
+        //bool canMove = CanMove(direction, speed * Time.deltaTime);
+        //if (!canMove)
+        //{
+        //    direction = new Vector3(direction.x, 0f).normalized;
+        //    canMove = CanMove(direction, speed * Time.deltaTime);
+        //    if (!canMove)
+        //    {
+        //        direction = new Vector3(0f, direction.y).normalized;
+        //        canMove = CanMove(direction, speed * Time.deltaTime);
+        //    }
+        //}
+       // if (canMove)
+       // {
+            transform.Translate(direction * speed * Time.deltaTime, Space.World);
+            lastMoveDir = direction;
+        //}
+        
+    }  
+    
+    private bool CanMove(Vector3 dir, float distance)
+    {
+        return Physics2D.Raycast(transform.position, dir, distance).collider == null;
+    }
+
+    private void HandleDash()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            float dashDistance = 10f;
+            transform.position += lastMoveDir * dashDistance;
+            //transform.position = new Vector2(Mathf.Clamp(transform.position.x, -10f, 10f), Mathf.Clamp(transform.position.y, -10f, 10f));
+        }
+    }
 }
