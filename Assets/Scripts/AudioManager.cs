@@ -6,19 +6,23 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
-
     public static Sound[] sounds;
     public Sound[] soundsToRegister;
     public static AudioManager instance;
+
+    // Name -> (maximum value, time since last sound)
     public static Dictionary<string, Vector2> Clips = new Dictionary<string, Vector2>();
+
+    private const float lowestSoundValue = 0.3f;
 
     void Awake()
     {
         sounds = soundsToRegister;
 
         if (instance == null)
+        {
             instance = this;
-
+        }
         else
         {
             Destroy(gameObject);
@@ -30,20 +34,17 @@ public class AudioManager : MonoBehaviour
 
     public static float GetVolume(string name, float volume)
     {
-
         if (Clips.ContainsKey(name))
         {
             float ltp = Clips[name].x;
-            volume = Mathf.Lerp(Clips[name].y / 3, Clips[name].y, Mathf.Clamp(Time.time - ltp, 0, 1));
+            volume = Mathf.Lerp(Clips[name].y / lowestSoundValue, Clips[name].y, Mathf.Clamp(Time.time - ltp, 0, 1));
 
             Clips[name] = new Vector2(Time.time, Clips[name].y);
         }
-
         else
         {
             Clips.Add(name, new Vector2(Time.time, volume));
         }
-
         return volume;
     }
 

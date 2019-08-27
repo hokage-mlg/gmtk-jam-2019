@@ -512,9 +512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemySpeed: 4
-  CoolDown: 1
-  RangeOfMotion: {x: 0, y: 5}
-  RandomImpact: 1.2
+  CoolDown: 1.5
+  RandomImpact: 0.9
 --- !u!82 &-8664493499008248624
 AudioSource:
   m_ObjectHideFlags: 0

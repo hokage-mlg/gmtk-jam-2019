@@ -10,18 +10,15 @@ public class CurrentEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // UI BLOCK
-        var canvas = Instantiate(CanvasPrefab);
-        EnemyName = canvas.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        // LOGIC BLOCK
+        var canvasEnemyName = Instantiate(CanvasPrefab);
+        EnemyName = canvasEnemyName.GetComponentInChildren<TMPro.TextMeshProUGUI>();
     }
 
-    public void SetCurrentEnemy(string enemyName, GameObject enemy)
+    public static void SetCurrentEnemy(string enemyName, GameObject enemy)
     {
-        // UI BLOCK
         EnemyName.text = enemyName;
-        // LOGIC BLOCK
     }
 
-    private TMPro.TextMeshProUGUI EnemyName;
+    private GameObject gameController;
+    private static TMPro.TextMeshProUGUI EnemyName;
 }

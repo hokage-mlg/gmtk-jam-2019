@@ -6,16 +6,24 @@ public class MonsterLife : MonoBehaviour
 {
     [SerializeField]
     private int HP = 1;
-
-    private GameObject game;
-    private RoomLighting Room;
-    private RelodScene scenes;
+    
     bool THE_BOY = false;
     
     [SerializeField]
     private GameObject absorbPrefab = null;
     [SerializeField]
     private GameObject enemyExplosionPrefab = null;
+
+    private void Start()
+    {
+        fadeInLeft = fadeInTime;
+        sprite = GetComponentInChildren<SpriteRenderer>();
+
+        if (absorbPrefab == null)
+        {
+            absorbPrefab = Resources.Load<GameObject>("AbsorbBubble.prefab");
+        }
+    }
 
     private void Update()
     {
@@ -26,34 +34,16 @@ public class MonsterLife : MonoBehaviour
         newColor.a = Mathf.Lerp(1, 0, fadeInLeft / fadeInTime);
         sprite.color = newColor;
     }
-    
-    private void Start()
-    {
-        fadeInLeft = fadeInTime;
-        sprite = GetComponentInChildren<SpriteRenderer>();
-        game = GameObject.FindGameObjectWithTag("GameController");
-        Room = game.GetComponent<RoomLighting>();
-        scenes = game.GetComponent<RelodScene>();
 
-        if (absorbPrefab == null)
-        {
-            absorbPrefab = Resources.Load<GameObject>("AbsorbBubble.prefab");
-        }
-    }
-
-    public void Damage()
+    public void Damage(int damage = 1)
     {
         if (THE_BOY)
         {
-            HP--;
-            if (HP == 0)
+            HP -= damage;
+            if (HP <= 0)
             {
-                GameObject.Find("Game Manager").GetComponent<ArenaEnemySpawner>().ChangeTheBoy(gameObject);
-                if (scenes)
-                {
-                    scenes.CurrentCount(1);
-                }
-                Room.Lighten(1);
+                ArenaEnemySpawner.ChangeTheBoy(gameObject);
+                
                 var enemyExplosion = Instantiate(enemyExplosionPrefab, transform.position, Quaternion.identity);
                 Destroy(enemyExplosion, 0.5f);
                 Destroy(gameObject);
@@ -61,7 +51,6 @@ public class MonsterLife : MonoBehaviour
         }
         else
         {
-            // TODO: make visual and sound effects of absorb
             if (absorbPrefab)
             {
                 var absorb = Instantiate(absorbPrefab, gameObject.transform.position, Quaternion.identity);
@@ -77,7 +66,7 @@ public class MonsterLife : MonoBehaviour
         {
             Destroy(coll.gameObject);
             Time.timeScale = 0;
-            scenes.PressR();
+            RelodScene.PressR();
         }
     }
 

@@ -543,6 +543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 3.5
   LizardBoostSpeed: 5
+  RandomBoostRange: {x: 4, y: 12}
+  LizardBoostTime: 2
 --- !u!82 &-4325479809275201537
 AudioSource:
   m_ObjectHideFlags: 0

@@ -16,8 +16,11 @@ public class EnemyMovement : MonoBehaviour
 
     protected void MoveAndRotate()
     {
-        MoveToward();
-        Rotation();
+        if (allowMovement)
+        {
+            MoveToward();
+            Rotation();
+        }
     }
 
     protected virtual void Update()
@@ -36,16 +39,18 @@ public class EnemyMovement : MonoBehaviour
         transform.eulerAngles = new Vector3(0, 0, z);
     }
 
-    public void StopUpdate(float time)
+    public void StopMovement(float time)
     {
-        enabled = false;
-        StartCoroutine(EnableUpdate(0.7f));
+        allowMovement = false;
+        StartCoroutine(EnableMovement(time));
     }
 
-    private IEnumerator EnableUpdate(float wait)
+    private IEnumerator EnableMovement(float wait)
     {
         yield return new WaitForSeconds(wait);
         
-        enabled = true;
+        allowMovement = true;
     }
+
+    private bool allowMovement = true;
 }

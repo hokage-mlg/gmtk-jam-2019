@@ -15,14 +15,14 @@ public class KnockBack : MonoBehaviour
             if (Enemy != null)
             {
                 Enemy.drag = 1;
-                Vector2 difference = Enemy.transform.position - transform.position;
-                difference = difference.normalized * thrust;
-                Enemy.AddForce(difference, ForceMode2D.Impulse);
+                Vector2 direction = Enemy.transform.position - transform.position;
+                direction = direction.normalized * thrust;
+                Enemy.AddForce(direction, ForceMode2D.Impulse);
 
                 var moveComp = Enemy.GetComponent<EnemyMovement>();
                 if (moveComp)
                 {
-                    moveComp.StopUpdate(0.5f);
+                    moveComp.StopMovement(0.7f);
                 }
                 else
                 {

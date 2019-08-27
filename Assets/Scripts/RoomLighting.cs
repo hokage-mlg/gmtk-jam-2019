@@ -7,8 +7,6 @@ public class RoomLighting : MonoBehaviour
 {
     // Tilemap
     private Tilemap tilemap;
-    private GameObject Tile;
-    private ArenaEnemySpawner arena;
     private float TotalValue = 0;
     private float maxvalue = 0;
     private float CurrentVal;
@@ -23,12 +21,13 @@ public class RoomLighting : MonoBehaviour
 
     private void Start()
     {
-        arena = GetComponent<ArenaEnemySpawner>();
-        maxvalue = arena.EnemyCount();
         GameObject TileMap = GameObject.FindGameObjectWithTag("TailMap");
-        Tile = TileMap.transform.GetChild(0).gameObject;
-        Light = 0.2f + (TotalValue / maxvalue) * 0.8f;
+        var Tile = TileMap.transform.GetChild(0).gameObject;
         tilemap = Tile.GetComponent<Tilemap>();
+
+        var arena = GetComponent<ArenaEnemySpawner>();
+        maxvalue = arena.EnemyCount();
+        Light = 0.2f + (TotalValue / maxvalue) * 0.8f;
         NewLight(Light);
 
         SetSwampMaterial();

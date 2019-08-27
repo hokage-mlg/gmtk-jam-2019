@@ -10,14 +10,14 @@ public class Ghost : EnemyMovement
     [SerializeField]
     private float GhostBoostSpeed = 7f;
     [SerializeField]
-    private bool ImmortalityInBoost = true;
+    private bool PacifistInBoost = true;
     private BoxCollider2D BoxCollider;
-
-    private bool soundLock = false;
+    
     protected override void Start()
     {
+        standardSpeed = EnemySpeed;
         BoxCollider = GetComponent<BoxCollider2D>();
-        CoolDownBefore = CoolDown;
+        CoolDownBefore = CoolDown / 2;
         sprite = GetComponentInChildren<SpriteRenderer>();
         base.Start();
     }
@@ -29,44 +29,31 @@ public class Ghost : EnemyMovement
         base.Update();
     }
 
-    protected override void MoveToward()
-    {
-        base.MoveToward();
-    }
-
-    protected override void Rotation()
-    {
-        base.Rotation();
-    }
-
     private void GhostMode()
     {
         if (CoolDownBefore < 3f)
         {
-
-            if (!soundLock)
-            {
-                var audio = GetComponent<AudioSource>();
-                AudioManager.Play("Ghost", audio);
-                soundLock = true;
-            }
-
-            BoxCollider.isTrigger = ImmortalityInBoost;
-            EnemySpeed = GhostBoostSpeed;
+            BoxCollider.isTrigger = false;
+            EnemySpeed = standardSpeed;
             var s = sprite.color;
-            s.a = 0.5f;
+            s.a = 1f;
             sprite.color = s;
         }
 
         if (CoolDownBefore == 0)
         {
-            CoolDownBefore = CoolDown;
-            BoxCollider.isTrigger = false;
-            EnemySpeed = 4f;
+            var audio = GetComponent<AudioSource>();
+            AudioManager.Play("Ghost", audio);
+
+            BoxCollider.isTrigger = PacifistInBoost;
+            EnemySpeed = GhostBoostSpeed;
             var s = sprite.color;
-            s.a = 1f;
+            s.a = 0.5f;
             sprite.color = s;
-            soundLock = false;
+
+            CoolDownBefore = CoolDown;
         }
     }
+
+    private float standardSpeed;
 }

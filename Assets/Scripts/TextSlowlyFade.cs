@@ -8,7 +8,7 @@ public class TextSlowlyFade : MonoBehaviour
     [SerializeField]
     private float FadeDuration = 3;
     [SerializeField]
-    private Text text;
+    private Text text = null;
     
     // Start is called before the first frame update
     void Start()

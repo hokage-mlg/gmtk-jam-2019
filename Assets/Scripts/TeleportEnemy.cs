@@ -14,7 +14,7 @@ public class TeleportEnemy : EnemyMovement
 
     protected override void Start()
     {
-        CoolDownBefore = Rand();
+        CoolDownBefore = Random.Range(TpCooldownRange.x, TpCooldownRange.y);
         arena = GameObject.FindGameObjectWithTag("GameController")
             .GetComponent<ArenaEnemySpawner>();
         base.Start();
@@ -55,18 +55,13 @@ public class TeleportEnemy : EnemyMovement
                 {
                     var audio = GetComponent<AudioSource>();
                     AudioManager.Play("Blink", audio);
-                    CoolDownBefore = Rand();
-                    transform.position = Player.transform.position +NVector;
+                    CoolDownBefore = Random.Range(TpCooldownRange.x, TpCooldownRange.y);
+                    transform.position = Player.transform.position + NVector;
                     return;
                 }
                 
             }
 
         }
-    }
-
-    private float Rand()
-    {
-        return Random.Range(TpCooldownRange.x, TpCooldownRange.y);
     }
 }

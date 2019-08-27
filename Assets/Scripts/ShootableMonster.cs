@@ -26,16 +26,6 @@ public class ShootableMonster : EnemyMovement
         base.Update();
     }
 
-    protected override void MoveToward()
-    {
-        base.MoveToward();
-    }
-
-    protected override void Rotation()
-    {
-        base.Rotation();
-    }
-
     private void CmdShoot(Vector3 PlayerPos)
     {
         var bullet = Instantiate(Bullet, transform.position, new Quaternion());

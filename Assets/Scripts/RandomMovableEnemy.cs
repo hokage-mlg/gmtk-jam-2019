@@ -7,12 +7,10 @@ public class RandomMovableEnemy : EnemyMovement
     Vector3 direct;
     private float CoolDownBefore;
     [SerializeField]
-    private float CoolDown = 1f;
-    [SerializeField]
-    private Vector2 RangeOfMotion = new Vector2(0, 5);
+    private float CoolDown = 3f;
 
     [SerializeField]
-    private float RandomImpact = 5f;
+    private float RandomImpact = 1.2f;
 
     protected override void Start()
     {
@@ -21,11 +19,16 @@ public class RandomMovableEnemy : EnemyMovement
         direct = Player.transform.position;
     }
 
+    protected override void MoveToward()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, direct, EnemySpeed * Time.deltaTime);
+    }
+
     protected override void Update()
     {
         CoolDownBefore = Mathf.Max(CoolDownBefore - Time.deltaTime, 0);
         NewDirect();
-        MoveAndRotate();
+        base.Update();
     }
 
     private void NewDirect()
@@ -46,7 +49,6 @@ public class RandomMovableEnemy : EnemyMovement
             direct = vect + Player.transform.position;
 
             CoolDownBefore = Random.Range(CoolDown / 3, CoolDown);
-
         }
     }
     private bool soundLock = false;

@@ -8,28 +8,28 @@ public class CharacterShooting : MonoBehaviour
     private GameObject Bullet = null;
 
     [SerializeField]
-    private float reloadTimeSec = 1.5f;
+    private float reloadTimeSec = 0.6f;
 
     [SerializeField]
-    private float randomShootingAngle = 10f;
+    private float randomShootingAngle = 0;
 
     [SerializeField]
     private GameObject mouseCursorObj = null;
-    private GameObject mouseCursorInst;
 
     private void Start()
     {
+        mainCamera = Camera.main;
         Cursor.visible = false;
         GameObject.Instantiate(mouseCursorObj);
+        shootSound = GetComponent<AudioSource>();
     }
 
     private void CmdShoot(Vector3 mousePos, Vector3 screenPoint)
     {
         var bullet = Instantiate(Bullet, transform.position, new Quaternion());
-        var audio = GetComponent<AudioSource>();
-        if (audio)
+        if (shootSound)
         {
-            audio.Play();
+            shootSound.Play();
         }
 
         var offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
@@ -45,16 +45,16 @@ public class CharacterShooting : MonoBehaviour
         {
             reloadTimeLeft -= Time.deltaTime;
         }
-
-        if (Input.GetButton("Fire1") && reloadTimeLeft <= 0)
+        else if (Input.GetButton("Fire1"))
         {
             Vector3 mousePos = Input.mousePosition;
-            var screenPoint = Camera.main.WorldToScreenPoint(transform.localPosition);
+            var screenPoint = mainCamera.WorldToScreenPoint(transform.localPosition);
             CmdShoot(mousePos, screenPoint);
             reloadTimeLeft = reloadTimeSec;
         }
     }
 
     private float reloadTimeLeft = 0;
-
+    private Camera mainCamera;
+    private AudioSource shootSound;
 }

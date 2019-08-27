@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class LizardMovement : EnemyMovement
 {
-    private float CoolDownBefore;
+    private float CDTLeft;
     [SerializeField]
     private float LizardBoostSpeed = 4.5f;
+    [SerializeField]
+    private Vector2 RandomBoostRange = new Vector2(4f, 12f);
+
+    [SerializeField]
+    private float LizardBoostTime = 2;
+    private float LBTLeft;
+
     protected override void Start()
     {
-        CoolDownBefore = Rand();
+        standardSpeed = EnemySpeed;
+        CDTLeft = Rand();
+        LBTLeft = 0;
         base.Start();
     }
 
     protected override void Update()
     {
-        CoolDownBefore = Mathf.Max(CoolDownBefore - Time.deltaTime, 0);
+        CDTLeft = Mathf.Max(CDTLeft - Time.deltaTime, 0);
+        LBTLeft = Mathf.Max(LBTLeft - Time.deltaTime, 0);
         base.Update();
     }
 
@@ -32,27 +42,25 @@ public class LizardMovement : EnemyMovement
 
     private void ExtraSpeed()
     {
-        if (CoolDownBefore < 2f)
+        if (LBTLeft <= 0)
         {
-            if (!soundLock) {              
-                var audio = GetComponent<AudioSource>();
-                AudioManager.Play("LizardRun", audio);
-                soundLock = true;
-            }
-            EnemySpeed = LizardBoostSpeed;
+            EnemySpeed = standardSpeed;
         }
 
-        if (CoolDownBefore == 0)
+        if (CDTLeft == 0)
         {
-            CoolDownBefore = Rand();
-            EnemySpeed = 3f;
-            soundLock = false;
+            var audio = GetComponent<AudioSource>();
+            AudioManager.Play("LizardRun", audio);
+
+            CDTLeft = Rand();
+            LBTLeft = LizardBoostTime;
+            EnemySpeed = LizardBoostSpeed;
         }
     }
     private float Rand()
     {
-        return Random.Range(4f, 12f);
+        return Random.Range(RandomBoostRange.x, RandomBoostRange.y);
     }
-
-    private bool soundLock = false;
+    
+    private float standardSpeed;
 }

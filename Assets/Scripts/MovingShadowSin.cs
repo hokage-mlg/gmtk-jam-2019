@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Obsolete, destroy when new shadow is added
+/// </summary>
 public class MovingShadowSin : MonoBehaviour
 {
     private float startScale;
