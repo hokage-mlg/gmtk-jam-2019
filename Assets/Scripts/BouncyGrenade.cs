@@ -5,13 +5,18 @@ using System;
 
 public class BouncyGrenade : MonoBehaviour
 {
-    public float Speed = 18f;
+    public float Speed = 10f;
     [SerializeField]
     private float timeToDestruction = 1.2f;
     private float TTDLeft = 0;
     private float timeToExplode = 1.5f;
     private int bounceState = 0;
     private float damageRadius = 5f;
+    private float thrust = 10f;
+    private float MaxSpeed = 15f;
+    private float Boost = 0.1f;
+   
+
     void Start()
     {
         TTDLeft = timeToDestruction;
@@ -32,6 +37,9 @@ public class BouncyGrenade : MonoBehaviour
             case 2:
                 break;
         }
+
+        //
+        //transform.position = Vector3.Lerp(transform.position, Vector2.right, Time.deltaTime * Speed);
         transform.Translate(Vector2.right * Speed * Time.fixedDeltaTime);
         TTDLeft -= Time.fixedDeltaTime;
         timeToExplode -= Time.deltaTime;
@@ -47,8 +55,11 @@ public class BouncyGrenade : MonoBehaviour
        // onExplodeAction(transform.position);
         Destroy(gameObject);
     }
+
+   
     void OnTriggerEnter2D(Collider2D coll)
     {
+        
         if (coll.gameObject.tag == "Enemy")
         {
             var monsterComp = coll.gameObject.GetComponent<MonsterLife>();
@@ -65,9 +76,14 @@ public class BouncyGrenade : MonoBehaviour
         }
         else if (coll.gameObject.tag == "Environment")
         {
+           // Rigidbody2D Grenade = gameObject.GetComponent<Rigidbody2D>();
+          //  Vector2 directionGrenade = Grenade.transform.position - transform.position;
+          //  directionGrenade = directionGrenade.normalized * thrust;
+          //  Grenade.AddForce(directionGrenade, ForceMode2D.Impulse);
             if (coll.gameObject.GetComponent<DestructibleWall>() != null)
             {
-                Destroy(coll.gameObject);
+           //     Grenade.AddForce(directionGrenade, ForceMode2D.Impulse);
+                //Destroy(coll.gameObject);
             }
             if (coll.gameObject.GetComponent<MirrorWall>() != null)
             {
@@ -82,7 +98,9 @@ public class BouncyGrenade : MonoBehaviour
             }
             else
             {
-                ExplodeGrenade();
+                
+            //    Grenade.AddForce(directionGrenade, ForceMode2D.Impulse);
+                //ExplodeGrenade();
             }
         }
     }

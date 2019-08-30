@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 403760841909291368}
   - component: {fileID: 1125549271335974981}
   - component: {fileID: 1833118198669704453}
-  - component: {fileID: 7957122725518999917}
+  - component: {fileID: -6701105407980160227}
+  - component: {fileID: 8385357527158272528}
   m_Layer: 2
   m_Name: pfBouncyGrenade
   m_TagString: Untagged
@@ -94,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6bf26417da7c44881c200010e1cdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 18
-  timeToDestruction: 1.2
+  Speed: 10
+  timeToDestruction: 1
 --- !u!50 &1833118198669704453
 Rigidbody2D:
   serializedVersion: 4
@@ -104,21 +105,21 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8152557718820165428}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: ca37ba97736faf7419aeb79f7cbf4713, type: 2}
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &7957122725518999917
-CircleCollider2D:
+--- !u!61 &-6701105407980160227
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,9 +128,33 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8385357527158272528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8152557718820165428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449338468f55f2444a6a8c26f3e474bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 10
+  knockTime: 0.1
