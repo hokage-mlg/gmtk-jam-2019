@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: eaf520c9723355a4fbf2326605b81524
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7113785517791795225
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_0
+  - first:
+      213: -7110917252258224640
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_1
+  - first:
+      213: -6001173994365044220
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_2
+  - first:
+      213: -926150964539716829
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_3
+  - first:
+      213: 8482588007078665336
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_4
+  - first:
+      213: 7623527344867555269
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_5
+  - first:
+      213: 2266185175589690467
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_6
+  - first:
+      213: 8070466108436974171
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_7
+  - first:
+      213: 625817171671089162
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_8
+  - first:
+      213: 2758271166360482667
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_9
+  - first:
+      213: 5075364693358998770
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_10
+  - first:
+      213: -5392618186894418686
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_11
+  - first:
+      213: 53761546169525974
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_12
+  - first:
+      213: 1284439205374186146
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_13
+  - first:
+      213: 1035899503123145546
+    second: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 105
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 615.3334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7065f7122a5d67e46960c5dfdf8fbe37
+      internalID: -7113785517791795225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 615.3334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a4a822ed9e33543ae2efc18d1ebb55
+      internalID: -7110917252258224640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 615.3334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f72ab6478eecd41aea32ffad305420
+      internalID: -6001173994365044220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 615.3334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c12c3d33305d54e9b2388ab9748710
+      internalID: -926150964539716829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 615.3334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a217959eb608c1f4087946b87cb67c7e
+      internalID: 8482588007078665336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308.33334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4062dce38082f7a4e869c6fd77c52a08
+      internalID: 7623527344867555269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 308.33334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900cd3cc2f79cab42b8b613e8f4b2595
+      internalID: 2266185175589690467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 308.33334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9bcbe26b21cc247abfccc20788c766
+      internalID: 8070466108436974171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_8
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 308.33334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a2888ab15a4cf4e96bc4f5346d64fe
+      internalID: 625817171671089162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 308.33334
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b925864b78ae4da46a05d7722fe8cfe8
+      internalID: 2758271166360482667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333435
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b71063124de7174f945ea2e0bf9be8e
+      internalID: 5075364693358998770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1.3333435
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ee8c903d7bb7340829f1daaf8e621d
+      internalID: -5392618186894418686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1.3333435
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cb48dbccf44134181276a3607637e3
+      internalID: 53761546169525974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1.3333435
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd2627091ec9d349b8917912959e5e3
+      internalID: 1284439205374186146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zhuk-pauk_teni_raskadrovka_MEN_Sh_2_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1.3333435
+        width: 300
+        height: 307.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1d8648b8eceac4bb72e101068a00a2
+      internalID: 1035899503123145546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 95d98e54d016bf64dbad2f1d7b462314
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

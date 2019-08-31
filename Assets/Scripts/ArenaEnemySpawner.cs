@@ -12,6 +12,12 @@ public class ArenaEnemySpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] enemyWaves = null;
 
+    [SerializeField]
+    private bool SpawnZone = false;
+
+    static Random random = new Random();
+
+
     public Vector2 RoomBounds = new Vector2(15, 10);
 
     private List<int> randomSequence;
@@ -22,12 +28,28 @@ public class ArenaEnemySpawner : MonoBehaviour
 
     void Start()
     {
+        InitializeFields();
+
         roomLighting = GetComponent<RoomLighting>();
         scenesController = GetComponent<RelodScene>();
 
+
         // Get reference for UI current enemy name
+        currentEnemy = GetComponent<CurrentEnemy>();
+        GameObject SpawnSquare = GameObject.FindGameObjectWithTag("SpawnZone");
+        if (SpawnSquare)
+        {
+            SpawnScript = SpawnSquare.GetComponent<SpawnZoneScript>();
+        }
+
         currentEvilDictionary = evilDictionary;
         randomSequence = GenerateRandom(EnemyCount(), currentEvilDictionary.EvilNames.Length - 1);
+    }
+
+    private void InitializeFields()
+    {
+        anyBoy = false;
+        boysList = new List<GameObject>();
     }
     
     public static List<int> GenerateRandom(int count, int max)
@@ -130,8 +152,15 @@ public class ArenaEnemySpawner : MonoBehaviour
             enemy.GetComponentInChildren<TMPro.TextMeshPro>().text = currentEvilDictionary.EvilNames[randomSequence[sequenceIndex]];
             boysList.Add(enemy);
 
-            SetMonsterPosition(enemy);
-            
+            if (!SpawnZone)
+            {
+                SetMonsterPosition(enemy);
+            }
+            else
+            {
+                enemy.transform.position = SpawnScript.SpawnPosition();
+            }
+
             sequenceIndex++;
         }
     }
@@ -167,6 +196,10 @@ public class ArenaEnemySpawner : MonoBehaviour
     private int spawnIndex = 0;
     private EvilDictionary currentEvilDictionary;
     private Queue<string> enemyOrder;
+
+    
+    private CurrentEnemy currentEnemy;
+    private SpawnZoneScript SpawnScript;
     private static List<GameObject> boysList = new List<GameObject>();
 
     private static RoomLighting roomLighting;

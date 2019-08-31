@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - TailMap
   - Canvas
+  - SpawnZone
   layers:
   - Default
   - TransparentFX
