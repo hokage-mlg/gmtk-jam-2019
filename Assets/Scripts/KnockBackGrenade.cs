@@ -12,16 +12,16 @@ public class KnockBackGrenade : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             Rigidbody2D Enemy = other.GetComponent<Rigidbody2D>();
-            Rigidbody2D Grenade = gameObject.GetComponent<Rigidbody2D>();
+           
             if (Enemy != null)
             {
                 Enemy.drag = 1;
                 Vector2 direction = Enemy.transform.position - transform.position;
-                Vector2 directionGrenade = Grenade.transform.position - transform.position;
+                
                 direction = direction.normalized * thrust;
-                directionGrenade = directionGrenade.normalized * thrust;
+                
                 Enemy.AddForce(direction, ForceMode2D.Impulse);
-                Grenade.AddForce(directionGrenade, ForceMode2D.Impulse);
+                
 
                 var moveComp = Enemy.GetComponent<EnemyMovement>();
                 if (moveComp)
