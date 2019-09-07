@@ -15,8 +15,9 @@ public class BouncyGrenade : MonoBehaviour
     private float thrust = 10f;
     private float MaxSpeed = 15f;
     private float Boost = 0.1f;
-
-
+    public LayerMask Enemy;
+    [SerializeField]
+    private Collider2D enemy;
     void Start()
     {
         TTDLeft = timeToDestruction;
@@ -36,35 +37,36 @@ public class BouncyGrenade : MonoBehaviour
                 break;
             case 2:
                 break;
-        }
-
-        //
-        //transform.position = Vector3.Lerp(transform.position, Vector2.right, Time.deltaTime * Speed);
-        //transform.Translate(Vector2.right * Speed * Time.fixedDeltaTime);
+        }       
         gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right, ForceMode2D.Impulse);
         TTDLeft -= Time.fixedDeltaTime;
         timeToExplode -= Time.deltaTime;
         if (timeToExplode <= 0f)
         {
-
             ExplodeGrenade();
-
         }
     }
 
-    private void ExplodeGrenade()
+     void ExplodeGrenade()
     {
-        gameObject.GetComponent<BoxCollider2D>().size = new Vector2(3, 3);
-        Destroy(gameObject);
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, 5f, new Vector2(5, 5), 5f);
+        //for (int i = 0; i < hits.Length; i++)
+       // {
+        //    triggerEnterExplode(hits[i].collider);
+       // }
+        foreach (RaycastHit2D hit in hits)
+        { 
+            triggerEnterExplode(hit.collider);
+        }
+        //Destroy(gameObject);
     }
 
-
-    void OnTriggerEnter2D(Collider2D coll)
+    void triggerEnterExplode(Collider2D coll)
     {
-
         if (coll.gameObject.tag == "Enemy")
         {
             var monsterComp = coll.gameObject.GetComponent<MonsterLife>();
+            RaycastHit2D[] hit = Physics2D.CircleCastAll(gameObject.transform.position, 5f, new Vector2(5, 5), 5f);
             if (monsterComp)
             {
                 monsterComp.Damage();
@@ -85,7 +87,7 @@ public class BouncyGrenade : MonoBehaviour
             if (coll.gameObject.GetComponent<DestructibleWall>() != null)
             {
                 //     Grenade.AddForce(directionGrenade, ForceMode2D.Impulse);
-                //Destroy(coll.gameObject);
+                Destroy(coll.gameObject);
             }
             if (coll.gameObject.GetComponent<MirrorWall>() != null)
             {
@@ -102,8 +104,13 @@ public class BouncyGrenade : MonoBehaviour
             {
 
                 //    Grenade.AddForce(directionGrenade, ForceMode2D.Impulse);
-                //ExplodeGrenade();
+                ExplodeGrenade();
             }
         }
+    }
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+
+        
     }
 }

@@ -16,7 +16,7 @@ public class KnockBackGrenade : MonoBehaviour
             if (Enemy != null)
             {
                 Enemy.drag = 1;
-                Vector2 direction = Enemy.transform.position - transform.position;
+                Vector2 direction = gameObject.transform.position - Enemy.transform.position + transform.position;
                 
                 direction = direction.normalized * thrust;
                 

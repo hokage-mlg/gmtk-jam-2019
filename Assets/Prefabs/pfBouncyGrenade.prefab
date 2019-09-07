@@ -97,6 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 18
   timeToDestruction: 1.5
+  Enemy:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!50 &1833118198669704453
 Rigidbody2D:
   serializedVersion: 4

@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: -4575779773267849266}
   - component: {fileID: 8124210527876159285}
   - component: {fileID: 1962785647}
+  - component: {fileID: -5692458503398948156}
   m_Layer: 0
   m_Name: PlayerAlexflames
   m_TagString: Player
@@ -267,12 +268,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4305704709854959933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 996de016c8404e24ea18ea23e4bb6119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+  mov: 1
+  spin: 1
 --- !u!58 &4305704709854959872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +309,8 @@ MonoBehaviour:
   randomShootingAngle: 0
   mouseCursorObj: {fileID: 8267320113450945890, guid: 011dba4647a268540bdff308c46fe50b,
     type: 3}
+  pfBouncyGrenade: {fileID: 0}
+  pfExplosion: {fileID: 0}
 --- !u!82 &-4575779773267849266
 AudioSource:
   m_ObjectHideFlags: 0
@@ -508,3 +513,15 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4305704709854959933}
   m_Enabled: 1
+--- !u!114 &-5692458503398948156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305704709854959933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8735ea8f62c7844e9f8f098bf53046c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
