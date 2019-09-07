@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
 
-    private float speed = 12f;
+    public float speed = 12f;
 
     [SerializeField]
     private bool mov = true;
@@ -121,12 +121,48 @@ public class CharacterMovement : MonoBehaviour
             return false;
         }
     }
+
+    private bool TryDash(Vector3 baseMoveDir, float dashDistance)
+    {
+        Vector3 moveDir = baseMoveDir;
+        bool canMove = CanMove(moveDir, dashDistance);
+        //Debug.LogWarning("CheckTryMove");
+        if (!canMove)
+        {
+            //Debug.LogWarning("can't X");
+            moveDir = new Vector3(baseMoveDir.x, 0f);
+            canMove = moveDir.x == 0f && !CanMove(moveDir, dashDistance);
+
+            if (!canMove)
+            {
+                //Debug.LogWarning("can't Y");
+                moveDir = new Vector3(0f, baseMoveDir.y);
+                canMove = moveDir.y == 0f && !CanMove(moveDir, dashDistance);
+                if (!canMove)
+                {
+                    //Debug.LogWarning("AAA");
+                    moveDir = new Vector3(0f, 0f);
+                    canMove = moveDir.y == moveDir.x && !CanMove(moveDir, dashDistance);
+                }
+            }
+        }
+
+        if (canMove)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+    }
     private void HandleDash()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {                   
             Debug.LogWarning("DASH");
-            if (TryMove(lastMoveDir, dashDistance))
+            if (TryDash(lastMoveDir, dashDistance))
             {                 
                 Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;               
                 lastMoveDir = direction;
