@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe00fb3cd49cce4badad8a8c9048f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 3
+  HP: 5
   absorbPrefab: {fileID: 2283194635219670669, guid: 224aae38e04769942a566bd407d97897,
     type: 3}
   enemyExplosionPrefab: {fileID: 5502795485912975041, guid: 77d8c77705a4cb643b550a5c4a850bc3,

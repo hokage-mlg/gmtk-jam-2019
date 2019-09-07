@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
+
     private float speed = 12f;
 
     [SerializeField]
@@ -12,7 +13,7 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField]
     private bool spin = true;
-
+    
     private Animator anim;
     private AudioSource walkingSound;
     public Vector3 lastMoveDir;

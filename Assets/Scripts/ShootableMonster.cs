@@ -2,41 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootableMonster : EnemyMovement
+public class ShootableMonster : AttackingMonster
 {
     [SerializeField]
-    private GameObject Bullet = null;
-    private float CoolDownBefore;
-    private float CoolDown = 1f;
+    protected float RandomShotAngle = 15f;
+    [SerializeField]
+    protected GameObject Bullet = null;
 
-    protected override void Start()
+    protected virtual void ShootBulletStraight(Vector2 direction, GameObject bulletToSpawn, float randomAngle)
     {
-        CoolDownBefore = CoolDown;
-        base.Start();
-    }
-
-    protected override void Update()
-    {
-        CoolDownBefore = Mathf.Max(CoolDownBefore - Time.deltaTime, 0);
-        if (CoolDownBefore == 0)
-        {
-            CmdShoot(Player.transform.position);
-            CoolDownBefore = CoolDown;
-        }
-        base.Update();
-    }
-
-    private void CmdShoot(Vector3 PlayerPos)
-    {
-        var bullet = Instantiate(Bullet, transform.position, new Quaternion());
+        var bullet = Instantiate(bulletToSpawn, transform.position, new Quaternion());
 
         var audio = GetComponent<AudioSource>();
         AudioManager.Play("MonsterShot", audio);
 
-        var offset = new Vector2(PlayerPos.x - transform.position.x, PlayerPos.y - transform.position.y);
+        var offset = new Vector2(direction.x - transform.position.x, direction.y - transform.position.y);
         var angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-        angle += Random.Range(-15, 15);
+        angle += Random.Range(-randomAngle, randomAngle);
         bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
         bullet.transform.Translate(Vector2.right * 0.5f);
     }
+
+    protected override void Attack()
+    {
+        var PlayerPos = Player.transform.position;
+        ShootBulletStraight(PlayerPos, Bullet, RandomShotAngle);
+    }
+
 }

@@ -43,7 +43,7 @@ public class SpinEnemy : EnemyMovement
     {
         if (isCircle)
         {
-            EnemySpeed = NotSpinSpeed + 1f ;
+            EnemySpeed = NotSpinSpeed + 1f;
             angle += Time.deltaTime;
             var x = Mathf.Cos(angle * EnemySpeed) * (radius-0.1f);
             var y = Mathf.Sin(angle * EnemySpeed) * (radius-0.1f);

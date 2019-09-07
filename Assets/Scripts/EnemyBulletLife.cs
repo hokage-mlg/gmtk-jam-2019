@@ -7,15 +7,15 @@ public class EnemyBulletLife : MonoBehaviour
     [SerializeField]
     public float BulletSpeed = 12f;
     [SerializeField]
-    private float BulletLifeLength = 3f;
+    protected float BulletLifeLength = 3f;
 
-    void Update()
+    protected virtual void Update()
     {
-        transform.Translate(Vector2.right * BulletSpeed * Time.deltaTime);
+        transform.Translate(Vector2.right * BulletSpeed * Time.deltaTime, Space.Self);
         Destroy(gameObject, BulletLifeLength);
     }
 
-    void OnTriggerEnter2D(Collider2D coll)
+    protected virtual void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Environment")
         {

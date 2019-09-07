@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletLife : MonoBehaviour
 {
+    // Logic
     public float Speed = 18f;
     [SerializeField]
     private float timeToDestruction = 1.2f;
@@ -34,13 +35,13 @@ public class BulletLife : MonoBehaviour
                 Debug.LogError("ОШИБКА: УСТАНОВИТЕ МОНСТРУ " + coll.gameObject.name + " КОМПОНЕНТ MonsterLife");
                 Destroy(coll.gameObject);
             }
-            Destroy(gameObject);
+            DestroyBullet();
         }
         else if (coll.gameObject.tag == "Environment")
         {
             if (coll.gameObject.GetComponent<DestructibleWall>() != null)
             {
-                Destroy(coll.gameObject);
+                DestroyBullet();
             }
             if (coll.gameObject.GetComponent<MirrorWall>() != null)
             {
@@ -55,8 +56,28 @@ public class BulletLife : MonoBehaviour
             }
             else
             {
-                Destroy(gameObject);
+                DestroyBullet();
             }
         }
+    }
+
+    public void DestroyBullet()
+    {
+        this.enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject, 1);
+        StopEmitter();
+    }
+
+    // Non-logic
+    [SerializeField]
+    private ParticleSystem particlesEmitter = null;
+    [SerializeField]
+    private SpriteRenderer sprite = null;
+
+    private void StopEmitter()
+    {
+        particlesEmitter.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+        sprite.color = new Color(0, 0, 0, 0);
     }
 }
