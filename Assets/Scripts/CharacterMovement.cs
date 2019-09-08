@@ -5,7 +5,6 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
-
     public float speed = 12f;
 
     [SerializeField]
@@ -13,28 +12,32 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField]
     private bool spin = true;
-    
+
+    [SerializeField]
+    public float dashDistance = 2f;
+
     private Animator anim;
     private AudioSource walkingSound;
     public Vector3 lastMoveDir;
-    private float dashDistance = 2f;
+
     private void Start()
     {
         var sounds = GetComponents<AudioSource>();
         walkingSound = sounds[1];
         anim = GetComponentInChildren<Animator>();
-
         mainCamera = Camera.main;
     }
 
     private void Update()
-    {      
+    {
         Movement();
         Rotation();
         HandleDash();
     }
+
     private void Rotation()
     {
+
         if (spin == true)
         {
             var mousepos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -46,22 +49,26 @@ public class CharacterMovement : MonoBehaviour
 
     private void Movement()
     {
+
         if (mov == true)
         {
             Vector2 direction = new Vector2();
             direction += new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
             if (direction.magnitude > 1)
             {
                 direction.Normalize();
             }
-           
+
             if (anim != null)
             {
+
                 if (direction.magnitude == 0)
                 {
                     walkingSound.Pause();
                     anim.Play("HeroIdle");
                 }
+
                 else if (walkingSound.isPlaying == false)
                 {
                     walkingSound.volume = Random.Range(0.4f, 0.6f);
@@ -70,81 +77,39 @@ public class CharacterMovement : MonoBehaviour
                     anim.Play("HeroWalking");
                 }
             }
-            if (TryMove(direction, speed))
-            {
-                //Debug.LogWarning("MOVEMENTCHECK");
-                transform.Translate(direction * speed * Time.deltaTime, Space.World);
-                lastMoveDir = direction;               
-            }
-            
+
+            transform.Translate(direction * speed * Time.deltaTime, Space.World);
+            lastMoveDir = direction;
+
         }
     }
 
-    
     private bool CanMove(Vector3 dir, float dashDistance)
     {
-        return Physics2D.Raycast(transform.position, dir, dashDistance).collider == null;     
-    }
-    private bool TryMove(Vector3 baseMoveDir, float dashDistance)
-    {
-        Vector3 moveDir = baseMoveDir;
-        bool canMove = CanMove(moveDir, dashDistance);
-        //Debug.LogWarning("CheckTryMove");
-        if (!canMove)
-        {
-            //Debug.LogWarning("can't X");
-            moveDir = new Vector3(baseMoveDir.x, 0f);
-            canMove = moveDir.x == 0f && !CanMove(moveDir, dashDistance);
-
-            if (!canMove)
-            {
-                //Debug.LogWarning("can't Y");
-                moveDir = new Vector3(0f, baseMoveDir.y);
-                canMove = moveDir.y == 0f && !CanMove(moveDir, dashDistance);
-                if (!canMove)
-                {
-                    //Debug.LogWarning("AAA");
-                    moveDir = new Vector3(0f, 0f);
-                    canMove = moveDir.y == moveDir.x && !CanMove(moveDir, dashDistance);
-                }
-            }
-        }
-
-        if (canMove)
-        {
-            
-            return true;
-        }
-
-        else
-        {
-            return false;
-        }
+        return Physics2D.Raycast(transform.position + dir, dir, dashDistance).collider == null;
     }
 
     private bool TryDash(Vector3 baseMoveDir, float dashDistance)
     {
         Vector3 moveDir = baseMoveDir;
         bool canMove = CanMove(moveDir, dashDistance);
-        //Debug.LogWarning("CheckTryMove");
+
         if (!canMove)
         {
-            //Debug.LogWarning("can't X");
-            moveDir = new Vector3(baseMoveDir.x, 0f);
-            canMove = moveDir.x == 0f && !CanMove(moveDir, dashDistance);
+            moveDir = new Vector3(baseMoveDir.x, 0f).normalized;
+            canMove = moveDir.x != 0f && CanMove(moveDir, dashDistance);
+        }
 
-            if (!canMove)
-            {
-                //Debug.LogWarning("can't Y");
-                moveDir = new Vector3(0f, baseMoveDir.y);
-                canMove = moveDir.y == 0f && !CanMove(moveDir, dashDistance);
-                if (!canMove)
-                {
-                    //Debug.LogWarning("AAA");
-                    moveDir = new Vector3(0f, 0f);
-                    canMove = moveDir.y == moveDir.x && !CanMove(moveDir, dashDistance);
-                }
-            }
+        else if (!canMove)
+        {
+            moveDir = new Vector3(0f, baseMoveDir.y).normalized;
+            canMove = moveDir.y != 0f && CanMove(moveDir, dashDistance);
+        }
+
+        else if (!canMove)
+        {
+            moveDir = new Vector3(baseMoveDir.x, baseMoveDir.y).normalized;
+            canMove = moveDir.x == moveDir.y && CanMove(moveDir, dashDistance);
         }
 
         if (canMove)
@@ -157,24 +122,22 @@ public class CharacterMovement : MonoBehaviour
             return false;
         }
     }
+
     private void HandleDash()
     {
+
         if (Input.GetKeyDown(KeyCode.E))
-        {                   
-            Debug.LogWarning("DASH");
+        {
+
             if (TryDash(lastMoveDir, dashDistance))
-            {                 
-                Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;               
-                lastMoveDir = direction;
-                Debug.LogWarning("YES");
-                Debug.LogWarning(lastMoveDir);
-                transform.position += lastMoveDir * dashDistance;                
-            }
-            else
             {
-                Debug.LogWarning("NO");
+                Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+                lastMoveDir = direction;
+                transform.position += lastMoveDir * dashDistance;
             }
         }
     }
+
     private Camera mainCamera = null;
+
 }
