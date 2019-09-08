@@ -16,9 +16,21 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     public float dashDistance = 2f;
 
+    [SerializeField]
+    private float slideSpeed;
+
     private Animator anim;
     private AudioSource walkingSound;
     public Vector3 lastMoveDir;
+    public Vector3 slideDir;
+    private State state;
+
+
+    private enum State
+    {
+        Normal,
+        DodgeRollSliding,
+    }
 
     private void Start()
     {
@@ -26,13 +38,23 @@ public class CharacterMovement : MonoBehaviour
         walkingSound = sounds[1];
         anim = GetComponentInChildren<Animator>();
         mainCamera = Camera.main;
+        state = State.Normal;
     }
 
     private void Update()
     {
-        Movement();
-        Rotation();
-        HandleDash();
+        switch (state)
+        {
+            case State.Normal:
+                Movement();
+                Rotation();
+                HandleDash();
+                DodgeRoll();
+                break;
+            case State.DodgeRollSliding:
+                DodgeRollSliding();
+                break;
+        }
     }
 
     private void Rotation()
@@ -89,7 +111,7 @@ public class CharacterMovement : MonoBehaviour
         return Physics2D.Raycast(transform.position + dir, dir, dashDistance).collider == null;
     }
 
-    private bool TryDash(Vector3 baseMoveDir, float dashDistance)
+    private bool TryMove(Vector3 baseMoveDir, float dashDistance)
     {
         Vector3 moveDir = baseMoveDir;
         bool canMove = CanMove(moveDir, dashDistance);
@@ -129,13 +151,50 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
 
-            if (TryDash(lastMoveDir, dashDistance))
+            if (TryMove(lastMoveDir, dashDistance))
             {
                 Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
                 lastMoveDir = direction;
                 transform.position += lastMoveDir * dashDistance;
             }
         }
+    }
+
+    private void DodgeRoll()
+    {
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            state = State.DodgeRollSliding;
+            slideDir = (GetMouseWorldPosition() - transform.position).normalized;
+            slideSpeed = 7f;
+            walkingSound.Pause();
+        }
+    }
+
+    private void DodgeRollSliding()
+    {
+        TryMove(slideDir, slideSpeed * Time.deltaTime);
+        transform.position += slideDir * slideSpeed * Time.deltaTime;
+        slideSpeed -= slideSpeed * 1.5f * Time.deltaTime;
+
+        if (slideSpeed < 2f)
+        {
+            state = State.Normal;
+        }
+    }
+
+    public static Vector3 GetMouseWorldPosition()
+    {
+        Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+        vec.z = 0f;
+        return vec;
+    }
+
+    public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera)
+    {
+        Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
+        return worldPosition;
     }
 
     private Camera mainCamera = null;
