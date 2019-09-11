@@ -26,6 +26,9 @@ public class CharacterMovement : MonoBehaviour
     private float rollDurationCoeff = 1.5f;
 
     [SerializeField]
+    private float delayTime = 0.5f;
+
+    [SerializeField]
     public KeyCode Dash = KeyCode.E;
 
     [SerializeField]
@@ -60,8 +63,14 @@ public class CharacterMovement : MonoBehaviour
             case State.Normal:
                 Movement();
                 Rotation();
-                HandleDash();
-                DodgeRoll();
+                if (Input.GetKeyDown(Dash))
+                {
+                    StartCoroutine(HandleDash());
+                }
+                if (Input.GetKeyDown(Roll))
+                {
+                    DodgeRoll();
+                }
                 break;
             case State.DodgeRollSliding:
                 DodgeRollSliding();
@@ -149,31 +158,24 @@ public class CharacterMovement : MonoBehaviour
         return (canMove ? true : false);
     }
 
-    private void HandleDash()
+    private IEnumerator HandleDash()
     {
 
-        if (Input.GetKeyDown(Dash))
+        if (TryMove(lastMoveDir, dashDistance))
         {
-
-            if (TryMove(lastMoveDir, dashDistance))
-            {
-                Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-                lastMoveDir = direction;
-                transform.position += lastMoveDir * dashDistance;
-            }
+            Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+            lastMoveDir = direction;
+            yield return new WaitForSeconds(delayTime);
+            transform.position += lastMoveDir * dashDistance;
         }
     }
 
     private void DodgeRoll()
     {
-
-        if (Input.GetKeyDown(Roll))
-        {
-            state = State.DodgeRollSliding;
-            slideDir = (GetMouseWorldPosition() - transform.position).normalized;
-            slideSpeed = slideSpeedDefault;
-            walkingSound.Pause();
-        }
+        state = State.DodgeRollSliding;
+        slideDir = (GetMouseWorldPosition() - transform.position).normalized;
+        slideSpeed = slideSpeedDefault;
+        walkingSound.Pause();
     }
 
     private void DodgeRollSliding()
