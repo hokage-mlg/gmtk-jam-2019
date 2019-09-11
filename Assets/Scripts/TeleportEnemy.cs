@@ -57,11 +57,11 @@ public class TeleportEnemy : EnemyMovement
                     AudioManager.Play("Blink", audio);
                     CoolDownBefore = Random.Range(TpCooldownRange.x, TpCooldownRange.y);
                     transform.position = Player.transform.position + NVector;
+                    lifeComp.FadeIn(0.5f);
                     return;
                 }
                 
             }
-
         }
     }
 }

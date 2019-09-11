@@ -8,9 +8,11 @@ public class EnemyMovement : MonoBehaviour
     protected float EnemySpeed = 2f;
     protected GameObject Player;
     protected SpriteRenderer sprite;
+    protected MonsterLife lifeComp;
 
     protected virtual void Start()
-    {      
+    {
+        lifeComp = GetComponent<MonsterLife>();
         Player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -18,7 +20,9 @@ public class EnemyMovement : MonoBehaviour
     {
         if (allowMovement)
         {
-            MoveToward();
+            if (lifeComp.FadeInLeft == 0) {
+                MoveToward();
+            }
             Rotation();
         }
     }
