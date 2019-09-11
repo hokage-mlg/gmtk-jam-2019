@@ -9,6 +9,7 @@ TagManager:
   - TailMap
   - Canvas
   - SpawnZone
+  - SkillsManager
   layers:
   - Default
   - TransparentFX
