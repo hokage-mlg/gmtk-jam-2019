@@ -2,17 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class MovSkills : MonoBehaviour
 {
-    [SerializeField]
-    public float speed = 12f;
-
-    [SerializeField]
-    private bool mov = true;
-
-    [SerializeField]
-    private bool spin = true;
-
     [SerializeField]
     public float dashDistance = 2f;
 
@@ -37,7 +28,6 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 slideDir;
     private State state;
     private float slideSpeed;
-
     private enum State
     {
         Normal,
@@ -48,18 +38,14 @@ public class CharacterMovement : MonoBehaviour
     {
         var sounds = GetComponents<AudioSource>();
         walkingSound = sounds[1];
-        anim = GetComponentInChildren<Animator>();
-        mainCamera = Camera.main;
+        anim = GetComponentInChildren<Animator>();       
         state = State.Normal;
     }
-
     private void Update()
     {
         switch (state)
         {
-            case State.Normal:
-                Movement();
-                Rotation();
+            case State.Normal:              
                 HandleDash();
                 DodgeRoll();
                 break;
@@ -68,56 +54,6 @@ public class CharacterMovement : MonoBehaviour
                 break;
         }
     }
-
-    private void Rotation()
-    {
-
-        if (spin == true)
-        {
-            var mousepos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            Quaternion rot = Quaternion.LookRotation(transform.position - mousepos, Vector3.forward);
-            transform.rotation = rot;
-            transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
-        }
-    }
-
-    private void Movement()
-    {
-
-        if (mov == true)
-        {
-            Vector2 direction = new Vector2();
-            direction += new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-            if (direction.magnitude > 1)
-            {
-                direction.Normalize();
-            }
-
-            if (anim != null)
-            {
-
-                if (direction.magnitude == 0)
-                {
-                    walkingSound.Pause();
-                    anim.Play("HeroIdle");
-                }
-
-                else if (walkingSound.isPlaying == false)
-                {
-                    walkingSound.volume = Random.Range(0.4f, 0.6f);
-                    walkingSound.pitch = Random.Range(0.8f, 1f);
-                    walkingSound.Play();
-                    anim.Play("HeroWalking");
-                }
-            }
-
-            transform.Translate(direction * speed * Time.deltaTime, Space.World);
-            lastMoveDir = direction;
-
-        }
-    }
-
     private bool CanMove(Vector3 dir, float dashDistance)
     {
         return Physics2D.Raycast(transform.position + dir, dir, dashDistance).collider == null;
@@ -148,19 +84,19 @@ public class CharacterMovement : MonoBehaviour
 
         return (canMove ? true : false);
     }
-
     private void HandleDash()
     {
 
         if (Input.GetKeyDown(Dash))
         {
-
             if (TryMove(lastMoveDir, dashDistance))
             {
+                Debug.LogWarning("AAAA");
                 Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
                 lastMoveDir = direction;
                 transform.position += lastMoveDir * dashDistance;
             }
+            Debug.LogWarning("BBBB");
         }
     }
 
@@ -169,6 +105,7 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetKeyDown(Roll))
         {
+            
             state = State.DodgeRollSliding;
             slideDir = (GetMouseWorldPosition() - transform.position).normalized;
             slideSpeed = slideSpeedDefault;
@@ -200,7 +137,4 @@ public class CharacterMovement : MonoBehaviour
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
-
-    private Camera mainCamera = null;
-
 }

@@ -57,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -157,6 +158,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -273,6 +275,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+  mov: 1
+  spin: 1
+  dashDistance: 2
+  slideSpeedDefault: 7
+  minRollSpeed: 2
+  rollDurationCoeff: 1.5
+  Dash: 101
+  Roll: 324
 --- !u!58 &4305704709854959872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +316,8 @@ MonoBehaviour:
   randomShootingAngle: 0
   mouseCursorObj: {fileID: 8267320113450945890, guid: 011dba4647a268540bdff308c46fe50b,
     type: 3}
+  pfBouncyGrenade: {fileID: 0}
+  pfExplosion: {fileID: 0}
 --- !u!82 &-4575779773267849266
 AudioSource:
   m_ObjectHideFlags: 0
