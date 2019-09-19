@@ -28,6 +28,7 @@ public class MovSkills : MonoBehaviour
     private Vector3 slideDir;
     private State state;
     private float slideSpeed;
+    
     private enum State
     {
         Normal,
@@ -86,15 +87,16 @@ public class MovSkills : MonoBehaviour
     }
     private void HandleDash()
     {
-
+        
         if (Input.GetKeyDown(Dash))
         {
             if (TryMove(lastMoveDir, dashDistance))
             {
+                
                 Debug.LogWarning("AAAA");
-                Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-                lastMoveDir = direction;
-                transform.position += lastMoveDir * dashDistance;
+                //Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+               // lastMoveDir = direction;
+                //transform.position += lastMoveDir * dashDistance;
             }
             Debug.LogWarning("BBBB");
         }

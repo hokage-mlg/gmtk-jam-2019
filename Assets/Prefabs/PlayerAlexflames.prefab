@@ -281,8 +281,10 @@ MonoBehaviour:
   slideSpeedDefault: 7
   minRollSpeed: 2
   rollDurationCoeff: 1.5
+  delayTime: 0.5
   Dash: 101
   Roll: 324
+  direction2: {x: 0, y: 0}
 --- !u!58 &4305704709854959872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -312,12 +314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 6191924688321695861, guid: ee50d9a2dc4a6074fac8d27b86a21ee4, type: 3}
-  reloadTimeSec: 0.6
   randomShootingAngle: 0
   mouseCursorObj: {fileID: 8267320113450945890, guid: 011dba4647a268540bdff308c46fe50b,
     type: 3}
-  pfBouncyGrenade: {fileID: 0}
-  pfExplosion: {fileID: 0}
 --- !u!82 &-4575779773267849266
 AudioSource:
   m_ObjectHideFlags: 0
