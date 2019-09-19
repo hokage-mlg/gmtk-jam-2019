@@ -74,8 +74,8 @@ public class MonsterLife : MonoBehaviour
     {
         if (fadeInLeft == 0 && coll.gameObject.tag == "Player")
         {
-            Destroy(coll.gameObject);
-            Time.timeScale = 0;
+            CharacterLife life = coll.gameObject.GetComponent<CharacterLife>();
+            life.Death();
             RelodScene.PressR();
         }
     }

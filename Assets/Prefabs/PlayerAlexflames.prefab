@@ -218,6 +218,9 @@ GameObject:
   - component: {fileID: -4575779773267849266}
   - component: {fileID: 8124210527876159285}
   - component: {fileID: 4620249736018191623}
+  - component: {fileID: 578118691}
+  - component: {fileID: 578118692}
+  - component: {fileID: 578118701}
   m_Layer: 0
   m_Name: PlayerAlexflames
   m_TagString: Player
@@ -275,16 +278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  mov: 1
-  spin: 1
-  dashDistance: 2
-  slideSpeedDefault: 7
-  minRollSpeed: 2
-  rollDurationCoeff: 1.5
-  delayTime: 0.5
-  Dash: 101
-  Roll: 324
-  direction2: {x: 0, y: 0}
 --- !u!58 &4305704709854959872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -519,3 +512,40 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4305704709854959933}
   m_Enabled: 1
+--- !u!114 &578118691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305704709854959933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce5652f307d17d4f9335dd3b9d161af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForActiveSkills: {fileID: 0}
+--- !u!114 &578118692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305704709854959933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07118af1144a7a34fa0d8e1299f0a1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &578118701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305704709854959933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf59b4e48c6296043b61f51047004b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
