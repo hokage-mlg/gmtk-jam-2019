@@ -2,61 +2,77 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.Experimental.Rendering.LWRP;
 
 public class RoomLighting : MonoBehaviour
 {
-    // Tilemap
-    private Tilemap tilemap;
-    private float TotalValue = 0;
-    private float maxvalue = 0;
-    private float CurrentVal;
-    static float t = 0.0f;
-    static float Light;
-
-    // Swamp - enemy spawner
+    // Swamp = enemy spawner VFX
     [SerializeField]
     private Material swampMatPrefab = null;
     [SerializeField]
     private GameObject swampPrefab = null;
 
+
     private void Start()
     {
-        GameObject TileMap = GameObject.FindGameObjectWithTag("TailMap");
-        var Tile = TileMap.transform.GetChild(0).gameObject;
-        tilemap = Tile.GetComponent<Tilemap>();
+        sceneLight = GetComponentInChildren<Light2D>();
 
         var arena = GetComponent<ArenaEnemySpawner>();
         maxvalue = arena.EnemyCount();
-        Light = 0.2f + (TotalValue / maxvalue) * 0.8f;
+        RecalculateLight();
         NewLight(Light);
 
         SetSwampMaterial();
     }
 
-    public void Lighten(float val)
+    /// <summary>
+    /// The function changes the "light" parameter that
+    /// is later used to calculate scene lighting as
+    /// a current to maximum percentage
+    /// </summary>
+    /// <param name="val">Value to add to light</param>
+    public void AddToLight(float val)
     {
         TotalValue = TotalValue + val;
-        Light = 0.2f + (TotalValue / maxvalue) * 0.8f;
+        RecalculateLight();
         t = 0.0f;
+    }
+
+    private void RecalculateLight()
+    {
+        Light = 0.1f + Mathf.Pow(TotalValue / maxvalue, 1.7f) * 0.9f;
     }
 
     private void Update()
     {
         if (t < 0.7f)
         {
-            CurrentVal = Mathf.Lerp(tilemap.color.g, Light, t);
+            if (EXPERIMENTAL)
+            {
+                CurrentVal = Mathf.Lerp(sceneLight.color.g, Light, t);
+
+            }
+
             NewLight(CurrentVal);
-            NewSwampLight(CurrentVal);
+            NewSwampLight();
         }
         
         t += Time.deltaTime;
     }
-    private void NewLight(float Light)
+
+    bool EXPERIMENTAL = true;
+
+    private void NewLight(float light)
     {
-        tilemap.color = new Color(Light, Light, Light);
+        if (EXPERIMENTAL)
+        {
+            sceneLight.color = new Color(light, light, light);
+        }
     }
 
-    // Swamp
+    /// <summary>
+    /// Swamp initialization
+    /// </summary>
     private void SetSwampMaterial()
     {
         swampMat = new Material(swampMatPrefab);
@@ -67,9 +83,8 @@ public class RoomLighting : MonoBehaviour
             sprite.sharedMaterial = swampMat;
         }
     }
-
-    // Light is between 0.2 and 1
-    private void NewSwampLight(float Light)
+    
+    private void NewSwampLight()
     {
         var alpha = 1 - Light;
         var color = swampMat.color;
@@ -79,4 +94,12 @@ public class RoomLighting : MonoBehaviour
 
     private GameObject swampInstance;
     private Material swampMat;
+    
+    private Light2D sceneLight;
+
+    private float TotalValue = 0;
+    private float maxvalue = 0;
+    private float CurrentVal;
+    float t = 0.0f;
+    static float Light;
 }

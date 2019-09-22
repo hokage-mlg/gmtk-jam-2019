@@ -18,6 +18,9 @@ public class DetachDestroyParticleEmitter : MonoBehaviour
 
     void OnDestroy()
     {
-        particles.Stop();
+        if (particles)
+        {
+            particles.Stop();
+        }
     }
 }

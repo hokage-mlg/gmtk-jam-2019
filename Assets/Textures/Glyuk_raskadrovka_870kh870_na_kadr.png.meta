@@ -1,0 +1,955 @@
+fileFormatVersion: 2
+guid: d91967908398c33468c9e51fb89608c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6860203983701604957
+    second: Glyuk_raskadrovka_870kh870_na_kadr_0
+  - first:
+      213: 257271253865035413
+    second: Glyuk_raskadrovka_870kh870_na_kadr_1
+  - first:
+      213: 1560395856928729843
+    second: Glyuk_raskadrovka_870kh870_na_kadr_2
+  - first:
+      213: 1417607426383620868
+    second: Glyuk_raskadrovka_870kh870_na_kadr_3
+  - first:
+      213: -379198957717502471
+    second: Glyuk_raskadrovka_870kh870_na_kadr_4
+  - first:
+      213: 9052564473746058715
+    second: Glyuk_raskadrovka_870kh870_na_kadr_5
+  - first:
+      213: -7819385737246753503
+    second: Glyuk_raskadrovka_870kh870_na_kadr_6
+  - first:
+      213: 4439492100119231781
+    second: Glyuk_raskadrovka_870kh870_na_kadr_7
+  - first:
+      213: -4476157402710149078
+    second: Glyuk_raskadrovka_870kh870_na_kadr_8
+  - first:
+      213: -2169374226921871438
+    second: Glyuk_raskadrovka_870kh870_na_kadr_9
+  - first:
+      213: -8643614416547503828
+    second: Glyuk_raskadrovka_870kh870_na_kadr_10
+  - first:
+      213: -6284553353396145377
+    second: Glyuk_raskadrovka_870kh870_na_kadr_11
+  - first:
+      213: 239532044821424969
+    second: Glyuk_raskadrovka_870kh870_na_kadr_12
+  - first:
+      213: 3221320360339285649
+    second: Glyuk_raskadrovka_870kh870_na_kadr_13
+  - first:
+      213: 2966573981785507773
+    second: Glyuk_raskadrovka_870kh870_na_kadr_14
+  - first:
+      213: 9100077434031973258
+    second: Glyuk_raskadrovka_870kh870_na_kadr_15
+  - first:
+      213: 4270370512679500971
+    second: Glyuk_raskadrovka_870kh870_na_kadr_16
+  - first:
+      213: -7169961615605658749
+    second: Glyuk_raskadrovka_870kh870_na_kadr_17
+  - first:
+      213: 8680903738297257881
+    second: Glyuk_raskadrovka_870kh870_na_kadr_18
+  - first:
+      213: 2949591346383789042
+    second: Glyuk_raskadrovka_870kh870_na_kadr_19
+  - first:
+      213: 2176658338986564045
+    second: Glyuk_raskadrovka_870kh870_na_kadr_20
+  - first:
+      213: 4114252642557881221
+    second: Glyuk_raskadrovka_870kh870_na_kadr_21
+  - first:
+      213: -4491026038795306275
+    second: Glyuk_raskadrovka_870kh870_na_kadr_22
+  - first:
+      213: 6635466299748800670
+    second: Glyuk_raskadrovka_870kh870_na_kadr_23
+  - first:
+      213: -7399435888135718507
+    second: Glyuk_raskadrovka_870kh870_na_kadr_24
+  - first:
+      213: -3233198295163258073
+    second: Glyuk_raskadrovka_870kh870_na_kadr_25
+  - first:
+      213: 5287509527995674779
+    second: Glyuk_raskadrovka_870kh870_na_kadr_26
+  - first:
+      213: -540703837282441794
+    second: Glyuk_raskadrovka_870kh870_na_kadr_27
+  - first:
+      213: 8688830086814372508
+    second: Glyuk_raskadrovka_870kh870_na_kadr_28
+  - first:
+      213: 8248984219384334241
+    second: Glyuk_raskadrovka_870kh870_na_kadr_29
+  - first:
+      213: 3655431013463807211
+    second: Glyuk_raskadrovka_870kh870_na_kadr_30
+  - first:
+      213: 8278927177560193145
+    second: Glyuk_raskadrovka_870kh870_na_kadr_31
+  - first:
+      213: -5852481970238216865
+    second: Glyuk_raskadrovka_870kh870_na_kadr_32
+  - first:
+      213: 5880777125857167898
+    second: Glyuk_raskadrovka_870kh870_na_kadr_33
+  - first:
+      213: -4376736583043707645
+    second: Glyuk_raskadrovka_870kh870_na_kadr_34
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 420
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba7588e1915fac49a4eeb8329df09b8
+      internalID: 6860203983701604957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_1
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe812ee5a5da22429c544200357cbef
+      internalID: 257271253865035413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_2
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f171a71e704a6834bb175fe106902413
+      internalID: 1560395856928729843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_3
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80d94b0e376dba42a5d8e128142e5b3
+      internalID: 1417607426383620868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_4
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed799f3b281e28243a16166e63971336
+      internalID: -379198957717502471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_5
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d11994dfb11a544b973995f06ebadf
+      internalID: 9052564473746058715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_6
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 3480
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c82d17b8fb79d4aa6260130f17ed5a
+      internalID: -7819385737246753503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37de0535f9ac134e9bdae1213eb2a7e
+      internalID: 4439492100119231781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_8
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dce3cd2866162d48a803dbd569795d8
+      internalID: -4476157402710149078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_9
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677931b3ca0159e4083121d4764f1299
+      internalID: -2169374226921871438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_10
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb393db0f46e5c448b9c9c3d904a405
+      internalID: -8643614416547503828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_11
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3af1f9e3007e59448e820eb0efa46a2
+      internalID: -6284553353396145377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_12
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0f521a76ba64a4ba00869dc3ffc2bb
+      internalID: 239532044821424969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_13
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 2610
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b793c4af241f3418a9f8a96848a9fc
+      internalID: 3221320360339285649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6107bef39ec57294c9824e34a2712006
+      internalID: 2966573981785507773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_15
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d10f929d3a0b3428554692854f8e85
+      internalID: 9100077434031973258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_16
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a57a7ad870c054c88e44c1ff15beaa
+      internalID: 4270370512679500971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_17
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8e66090964d0a4eb29fb686c7ea5c9
+      internalID: -7169961615605658749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_18
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6ededfd9d38ac49abfc2bad1ea027c
+      internalID: 8680903738297257881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_19
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199d5aa458e4876458ff68b5c15bac50
+      internalID: 2949591346383789042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_20
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 1740
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d528c57222823644d85d9dc209fbd2f1
+      internalID: 2176658338986564045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bf66702e61f6741bef21920e37f1bc
+      internalID: 4114252642557881221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_22
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0ded5b99c7556449a31121e29cbb97
+      internalID: -4491026038795306275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_23
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8db4cf2a1cfbb040a7523a52de948a5
+      internalID: 6635466299748800670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_24
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409cd13220f23f849ba76aa31b578d65
+      internalID: -7399435888135718507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_25
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a916d91785990f445a7f7077aa886588
+      internalID: -3233198295163258073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_26
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d601f68427a63f43afae7d3d9fcf3fc
+      internalID: 5287509527995674779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_27
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 870
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc9756882627604a81f77e4f40a89df
+      internalID: -540703837282441794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7a1ee9f31566a4aa426b05cd56b3b4
+      internalID: 8688830086814372508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_29
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addd1424f4a7aa449bab526c9f125db2
+      internalID: 8248984219384334241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_30
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc9a7bdcaa9ddf4f81031300d596dff
+      internalID: 3655431013463807211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_31
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb8a5a1b6b0a2949a97926761682c90
+      internalID: 8278927177560193145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_32
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54a56ee5043cca48b04818f4a08b0a9
+      internalID: -5852481970238216865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_33
+      rect:
+        serializedVersion: 2
+        x: 4350
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcab6d5ae3de12469637e63b2becf30
+      internalID: 5880777125857167898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glyuk_raskadrovka_870kh870_na_kadr_34
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 0
+        width: 870
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a19c68a2f10d84ba6ea89a5b6cb92d
+      internalID: -4376736583043707645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

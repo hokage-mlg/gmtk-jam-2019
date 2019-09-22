@@ -28,9 +28,9 @@ Transform:
   m_LocalPosition: {x: 33.137054, y: -8.516296, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1457863795041152200}
-  - {fileID: 5158599762592692858}
-  - {fileID: 4639363411924971955}
+  - {fileID: 4398707816835105886}
+  - {fileID: 7973343000692789996}
+  - {fileID: 7589218897176238373}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57,6 +57,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeleportMonster (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451945491531228393, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122783078656520589, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8122783078331616383, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
@@ -163,10 +193,30 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520589, guid: 0d86570df5d218e4293d07ddf7d4760c,
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d86570df5d218e4293d07ddf7d4760c, type: 3}
+--- !u!4 &7589218897176238373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6451945491531228393, guid: 0d86570df5d218e4293d07ddf7d4760c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3520610244167859660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3976373955375330821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8670341746661068068}
+    m_Modifications:
+    - target: {fileID: 8122783078331616378, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
+      propertyPath: m_Name
+      value: TeleportMonster (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451945491531228393, guid: 0d86570df5d218e4293d07ddf7d4760c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
@@ -188,25 +238,10 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d86570df5d218e4293d07ddf7d4760c, type: 3}
---- !u!224 &4639363411924971955 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8122783078331616383, guid: 0d86570df5d218e4293d07ddf7d4760c,
-    type: 3}
-  m_PrefabInstance: {fileID: 3520610244167859660}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3976373955375330821
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8670341746661068068}
-    m_Modifications:
-    - target: {fileID: 8122783078331616378, guid: 0d86570df5d218e4293d07ddf7d4760c,
+    - target: {fileID: 8122783078656520589, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
-      propertyPath: m_Name
-      value: TeleportMonster (1)
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8122783078331616383, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
@@ -313,10 +348,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520589, guid: 0d86570df5d218e4293d07ddf7d4760c,
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d86570df5d218e4293d07ddf7d4760c, type: 3}
+--- !u!4 &7973343000692789996 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6451945491531228393, guid: 0d86570df5d218e4293d07ddf7d4760c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3976373955375330821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7242548279594328247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8670341746661068068}
+    m_Modifications:
+    - target: {fileID: 8122783078331616378, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
+      propertyPath: m_Name
+      value: TeleportMonster
       objectReference: {fileID: 0}
     - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
@@ -338,25 +388,10 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0d86570df5d218e4293d07ddf7d4760c, type: 3}
---- !u!224 &5158599762592692858 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8122783078331616383, guid: 0d86570df5d218e4293d07ddf7d4760c,
-    type: 3}
-  m_PrefabInstance: {fileID: 3976373955375330821}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &7242548279594328247
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8670341746661068068}
-    m_Modifications:
-    - target: {fileID: 8122783078331616378, guid: 0d86570df5d218e4293d07ddf7d4760c,
+    - target: {fileID: 8122783078656520589, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
-      propertyPath: m_Name
-      value: TeleportMonster
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8122783078331616383, guid: 0d86570df5d218e4293d07ddf7d4760c,
         type: 3}
@@ -463,36 +498,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520589, guid: 0d86570df5d218e4293d07ddf7d4760c,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122783078656520587, guid: 0d86570df5d218e4293d07ddf7d4760c,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d86570df5d218e4293d07ddf7d4760c, type: 3}
---- !u!224 &1457863795041152200 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8122783078331616383, guid: 0d86570df5d218e4293d07ddf7d4760c,
+--- !u!4 &4398707816835105886 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6451945491531228393, guid: 0d86570df5d218e4293d07ddf7d4760c,
     type: 3}
   m_PrefabInstance: {fileID: 7242548279594328247}
   m_PrefabAsset: {fileID: 0}

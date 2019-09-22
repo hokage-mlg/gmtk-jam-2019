@@ -57,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -210,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a991c81e82a3c4f9d7ccfe59ca3e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemySpeed: 2
   SpinSpeed: 3
   Radius: 2
   FreeFlySpeed: 6

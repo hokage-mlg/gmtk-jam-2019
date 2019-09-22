@@ -22,6 +22,7 @@ public class RelodScene : MonoBehaviour
         var arena = GetComponent<ArenaEnemySpawner>();
         Canvas.transform.GetChild(0).gameObject.SetActive(false);
         maxvalue = arena.EnemyCount();
+        isVictory = false;
     }
 
     public void CurrentCount(int val)

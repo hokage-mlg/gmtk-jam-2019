@@ -82,7 +82,7 @@ public class ArenaEnemySpawner : MonoBehaviour
         {
             scenesController.CurrentCount(1);
         }
-        roomLighting.Lighten(1);
+        roomLighting.AddToLight(1);
 
         boysList.Remove(oldBoy);
         if (boysList.Count != 0)

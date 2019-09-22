@@ -98,6 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 6981807588325560204, guid: 8e45a54aded8e8c4085a68ab57df4e94, type: 3}
+  reloadTimeSec: 0.6
+  randomShootingAngle: 0
+  mouseCursorObj: {fileID: 0}
 --- !u!1 &1094917229898406678
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +157,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
