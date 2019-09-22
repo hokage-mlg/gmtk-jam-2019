@@ -8,44 +8,16 @@ public class CharacterMovement : MonoBehaviour
     public float speed = 12f;
 
     [SerializeField]
-    private bool mov = true;
+    public bool mov = true;
 
     [SerializeField]
     private bool spin = true;
 
-    [SerializeField]
-    public float dashDistance = 2f;
-
-    [SerializeField]
-    private float slideSpeedDefault = 7f;
-
-    [SerializeField]
-    private float minRollSpeed = 2f;
-
-    [SerializeField]
-    private float rollDurationCoeff = 1.5f;
-
-    [SerializeField]
-    private float delayTime = 0.5f;
-
-    [SerializeField]
-    public KeyCode Dash = KeyCode.E;
-
-    [SerializeField]
-    public KeyCode Roll = KeyCode.Mouse1;
-
-    private Animator anim;
-    private AudioSource walkingSound;
+    [HideInInspector]
+    public Animator anim;
+    [HideInInspector]
+    public AudioSource walkingSound;
     private Vector3 lastMoveDir;
-    private Vector3 slideDir;
-    private State state;
-    private float slideSpeed;
-
-    private enum State
-    {
-        Normal,
-        DodgeRollSliding,
-    }
 
     private void Start()
     {
@@ -53,32 +25,15 @@ public class CharacterMovement : MonoBehaviour
         walkingSound = sounds[1];
         anim = GetComponentInChildren<Animator>();
         mainCamera = Camera.main;
-        state = State.Normal;
     }
 
     private void Update()
     {
-        switch (state)
-        {
-            case State.Normal:
-                Movement();
-                Rotation();
-                if (Input.GetKeyDown(Dash))
-                {
-                    StartCoroutine(HandleDash());
-                }
-                if (Input.GetKeyDown(Roll))
-                {
-                    DodgeRoll();
-                }
-                break;
-            case State.DodgeRollSliding:
-                DodgeRollSliding();
-                break;
-        }
+        Movement();
+        Rotation();
     }
 
-    private void Rotation()
+    public void Rotation()
     {
 
         if (spin == true)
@@ -90,7 +45,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    private void Movement()
+    public void Movement()
     {
 
         if (mov == true)
@@ -123,86 +78,14 @@ public class CharacterMovement : MonoBehaviour
 
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
             lastMoveDir = direction;
-
         }
     }
 
-    private bool CanMove(Vector3 dir, float dashDistance)
+    public Vector2 lastdir()
     {
-        return Physics2D.Raycast(transform.position + dir, dir, dashDistance).collider == null;
+        Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+        lastMoveDir = direction;
+        return lastMoveDir;
     }
-
-    private bool TryMove(Vector3 baseMoveDir, float dashDistance)
-    {
-        Vector3 moveDir = baseMoveDir;
-        bool canMove = CanMove(moveDir, dashDistance);
-
-        if (!canMove)
-        {
-            moveDir = new Vector3(baseMoveDir.x, 0f).normalized;
-            canMove = moveDir.x != 0f && CanMove(moveDir, dashDistance);
-        }
-
-        else if (!canMove)
-        {
-            moveDir = new Vector3(0f, baseMoveDir.y).normalized;
-            canMove = moveDir.y != 0f && CanMove(moveDir, dashDistance);
-        }
-
-        else if (!canMove)
-        {
-            moveDir = new Vector3(baseMoveDir.x, baseMoveDir.y).normalized;
-            canMove = moveDir.x == moveDir.y && CanMove(moveDir, dashDistance);
-        }
-
-        return (canMove ? true : false);
-    }
-
-    private IEnumerator HandleDash()
-    {
-
-        if (TryMove(lastMoveDir, dashDistance))
-        {
-            Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-            lastMoveDir = direction;
-            yield return new WaitForSeconds(delayTime);
-            transform.position += lastMoveDir * dashDistance;
-        }
-    }
-
-    private void DodgeRoll()
-    {
-        state = State.DodgeRollSliding;
-        slideDir = (GetMouseWorldPosition() - transform.position).normalized;
-        slideSpeed = slideSpeedDefault;
-        walkingSound.Pause();
-    }
-
-    private void DodgeRollSliding()
-    {
-        TryMove(slideDir, slideSpeed * Time.deltaTime);
-        transform.position += slideDir * slideSpeed * Time.deltaTime;
-        slideSpeed -= slideSpeed * rollDurationCoeff * Time.deltaTime;
-
-        if (slideSpeed < minRollSpeed)
-        {
-            state = State.Normal;
-        }
-    }
-
-    public static Vector3 GetMouseWorldPosition()
-    {
-        Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-        vec.z = 0f;
-        return vec;
-    }
-
-    public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera)
-    {
-        Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
-        return worldPosition;
-    }
-
     private Camera mainCamera = null;
-
 }

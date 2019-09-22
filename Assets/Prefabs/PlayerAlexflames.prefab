@@ -302,10 +302,10 @@ GameObject:
   - component: {fileID: -4575779773267849266}
   - component: {fileID: 8124210527876159285}
   - component: {fileID: 4620249736018191623}
-  - component: {fileID: 2967022025490230236}
   - component: {fileID: 578118691}
   - component: {fileID: 578118692}
   - component: {fileID: 578118701}
+  - component: {fileID: -5634046657495989913}
   m_Layer: 0
   m_Name: PlayerAlexflames
   m_TagString: Player
@@ -364,6 +364,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+  mov: 1
+  spin: 1
+  anim: {fileID: 0}
+  walkingSound: {fileID: 0}
 --- !u!58 &4305704709854959872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -635,3 +639,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf59b4e48c6296043b61f51047004b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5634046657495989913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305704709854959933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8f9662e91dc59498ac44dcb10dfc04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashDistance: 2
+  slideSpeedDefault: 7
+  minRollSpeed: 2
+  rollDurationCoeff: 1.5
+  Dash: 101
+  Roll: 324
+  characterMovement: {fileID: 4305704709854959934}
