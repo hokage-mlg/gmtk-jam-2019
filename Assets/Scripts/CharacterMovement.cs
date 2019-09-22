@@ -81,7 +81,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    public Vector2 lastdir()
+    public Vector2 getLastMoveDir()
     {
         Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         lastMoveDir = direction;

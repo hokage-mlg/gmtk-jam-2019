@@ -89,12 +89,12 @@ public class MovingSkills : MonoBehaviour
             canMove = moveDir.x == moveDir.y && CanMove(moveDir, dashDistance);
         }
 
-        return (canMove ? true : false);
+        return canMove;
     }
 
     private IEnumerator HandleDash()
     {
-        Vector3 lastMoveDir = characterMovement.lastdir();
+        Vector3 lastMoveDir = characterMovement.getLastMoveDir();
 
         if (TryMove(lastMoveDir, dashDistance))
         {
