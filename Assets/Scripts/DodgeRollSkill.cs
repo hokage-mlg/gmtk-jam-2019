@@ -2,26 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingSkills : MonoBehaviour
+public class DodgeRollSkill : MonoBehaviour
 {
     [SerializeField]
-    public float dashDistance = 2f;
-
-    [SerializeField]
     private float slideSpeedDefault = 7f;
-
     [SerializeField]
     private float minRollSpeed = 2f;
-
-    [SerializeField]
-    private float delayTime = 0.1f;
-
     [SerializeField]
     private float rollDurationCoeff = 1.5f;
-
-    [SerializeField]
-    public KeyCode Dash = KeyCode.E;
-
     [SerializeField]
     public KeyCode Roll = KeyCode.Mouse1;
 
@@ -29,28 +17,20 @@ public class MovingSkills : MonoBehaviour
     private State state;
     private float slideSpeed;
     public CharacterMovement characterMovement;
-
     private enum State
     {
         Normal,
         DodgeRollSliding,
     }
-
     private void Start()
     {
         state = State.Normal;
     }
-
     private void Update()
     {
         switch (state)
         {
-            case State.Normal:
-
-                if (Input.GetKeyDown(Dash))
-                {
-                    StartCoroutine(HandleDash());
-                }
+            case State.Normal:            
 
                 if (Input.GetKeyDown(Roll))
                 {
@@ -62,7 +42,6 @@ public class MovingSkills : MonoBehaviour
                 break;
         }
     }
-
     private bool CanMove(Vector3 dir, float dashDistance)
     {
         return Physics2D.Raycast(transform.position + dir, dir, dashDistance).collider == null;
@@ -93,18 +72,6 @@ public class MovingSkills : MonoBehaviour
 
         return canMove;
     }
-
-    private IEnumerator HandleDash()
-    {
-        Vector3 lastMoveDir = characterMovement.getLastMoveDir();
-
-        if (TryMove(lastMoveDir, dashDistance))
-        {
-            yield return new WaitForSeconds(delayTime);
-            transform.position += lastMoveDir * dashDistance;
-        }
-    }
-
     private void DodgeRoll()
     {
         state = State.DodgeRollSliding;
