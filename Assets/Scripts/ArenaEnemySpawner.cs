@@ -26,7 +26,7 @@ public class ArenaEnemySpawner : MonoBehaviour
     [SerializeField]
     private EvilDictionary evilDictionary = null;
 
-    void Start()
+    void Awake()
     {
         InitializeFields();
 
@@ -43,7 +43,7 @@ public class ArenaEnemySpawner : MonoBehaviour
         }
 
         currentEvilDictionary = evilDictionary;
-        randomSequence = GenerateRandom(EnemyCount(), currentEvilDictionary.EvilNames.Length - 1);
+        randomSequence = GenerateRandom(currentEvilDictionary.EvilNames.Length / 2, currentEvilDictionary.EvilNames.Length - 1);
     }
 
     private void InitializeFields()
@@ -124,12 +124,12 @@ public class ArenaEnemySpawner : MonoBehaviour
         return spawnPosition;
     }
 
-    void SetMonsterPosition(GameObject enemy)
+    protected void SetMonsterPosition(GameObject enemy)
     {
         enemy.transform.position = RandomBorderSpawnPos();
     }
 
-    void SpawnMonsters(int waveNum)
+    protected void SpawnMonsters(int waveNum)
     {
         var enemyWave = Instantiate(enemyWaves[waveNum], transform.position, Quaternion.identity);
 
@@ -168,32 +168,75 @@ public class ArenaEnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeToNextSpawn -= Time.deltaTime;
+        EnemySpawnUpdate();
+    }
 
-        if (timeToNextSpawn < 0 && spawnIndex < enemyWaves.GetLength(0))
+    protected void KillThemAll()
+    {
+        for(int i = 0;i < boysList.Count; i++)
         {
-            timeToNextSpawn = timeToEachSpawn;
-            SpawnMonsters(spawnIndex);
-            spawnIndex++;
-
-            if (spawnIndex > enemyWaves.GetLength(0)) { }
+            boysList[i].GetComponent<MonsterLife>().Damage(5);
         }
     }
+
+    protected void EnemySpawnUpdate()
+    {
+        if (isPointVictory)
+        {
+            timeToNextSpawn -= Time.deltaTime;
+            if (timeToNextSpawn < 0 && spawnIndex < enemyWaves.GetLength(0) && !RelodScene.isVictory)
+            {
+                timeToNextSpawn = timeToEachSpawn;
+                SpawnMonsters(spawnIndex);
+                spawnIndex++;
+
+                if (spawnIndex == enemyWaves.GetLength(0))
+                {
+                    spawnIndex = 0;
+                }
+            }
+
+            if (RelodScene.isVictory)
+            {
+                KillThemAll();
+            }
+        }
+        else
+        {
+            timeToNextSpawn -= Time.deltaTime;
+            if (timeToNextSpawn < 0 && spawnIndex < enemyWaves.GetLength(0))
+            {
+                timeToNextSpawn = timeToEachSpawn;
+                SpawnMonsters(spawnIndex);
+                spawnIndex++;
+
+                if (spawnIndex > enemyWaves.GetLength(0)) { }
+            }
+        }
+    }
+
     public int EnemyCount()
     {
-        EnemiesCount = 0;
-        foreach (var e in enemyWaves)
+        if (isPointVictory)
         {
-            EnemiesCount += e.transform.childCount;
+            return scenesController.pointsToVictory;
         }
-        int res = EnemiesCount;
-        EnemiesCount = 0;
-        return res;
+        else
+        {
+            EnemiesCount = 0;
+            foreach (var e in enemyWaves)
+            {
+                EnemiesCount += e.transform.childCount;
+            }
+            int res = EnemiesCount;
+            EnemiesCount = 0;
+            return res;
+        }
     }
 
     private int EnemiesCount = 0;
     private static bool anyBoy = false;
-    private int spawnIndex = 0;
+    protected int spawnIndex = 0;
     private EvilDictionary currentEvilDictionary;
     private Queue<string> enemyOrder;
 
@@ -204,4 +247,5 @@ public class ArenaEnemySpawner : MonoBehaviour
 
     private static RoomLighting roomLighting;
     private static RelodScene scenesController;
+    public bool isPointVictory = false;
 }

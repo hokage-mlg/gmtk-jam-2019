@@ -49,7 +49,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: abea49c1b8a873a42b337e2b9cb66392, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: -7113785517791795225, guid: eaf520c9723355a4fbf2326605b81524,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -454,9 +454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 5
-  absorbPrefab: {fileID: 2283194635219670669, guid: 224aae38e04769942a566bd407d97897,
+  absorbPrefab: {fileID: 5902167019511450196, guid: 020984a1d5cb01647bdf04f79e42e9a8,
     type: 3}
-  enemyExplosionPrefab: {fileID: 5502795485912975041, guid: 77d8c77705a4cb643b550a5c4a850bc3,
+  enemyExplosionPrefab: {fileID: 4315148799679399590, guid: 5e92d0f32688a8e4d80e5d03cb03a7bd,
     type: 3}
 --- !u!114 &7978445005060429644
 MonoBehaviour:

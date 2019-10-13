@@ -40,7 +40,7 @@ public class RoomLighting : MonoBehaviour
 
     private void RecalculateLight()
     {
-        Light = 0.1f + Mathf.Pow(TotalValue / maxvalue, 1.7f) * 0.9f;
+        Light = 0.1f + Mathf.Pow(Mathf.Clamp01(TotalValue / maxvalue), 1.7f) * 0.9f;
     }
 
     private void Update()

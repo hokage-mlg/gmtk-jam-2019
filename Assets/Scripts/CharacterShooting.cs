@@ -5,12 +5,6 @@ using UnityEngine;
 public class CharacterShooting : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Bullet = null;
-
-    [SerializeField]
-    private float randomShootingAngle = 0;
-
-    [SerializeField]
     private GameObject mouseCursorObj = null;
 
     private void Start()
@@ -28,11 +22,11 @@ public class CharacterShooting : MonoBehaviour
         {
             reloadTimeLeft -= Time.deltaTime;
         }
-        else if (Input.GetButton("Fire1"))
+        else if(Input.GetButton("Fire1"))
         {
             Vector3 mousePos = Input.mousePosition;
             var screenPoint = mainCamera.WorldToScreenPoint(transform.localPosition);
-            weapon.Shoot(mousePos, screenPoint);
+            weapon.Shoot(mousePos,screenPoint);
             reloadTimeLeft = weapon.ReloadTime;
         }
     }

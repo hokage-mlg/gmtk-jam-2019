@@ -17,7 +17,7 @@ public class MonsterLife : MonoBehaviour
     private void Start()
     {
         FadeIn(fadeInTime);
-        sprite = GetComponentInChildren<SpriteRenderer>();
+        sprites = GetComponentsInChildren<SpriteRenderer>();
 
         if (absorbPrefab == null)
         {
@@ -27,12 +27,19 @@ public class MonsterLife : MonoBehaviour
 
     private void Update()
     {
-        if (fadeInLeft == 0) return;
+        if (fadeInLeft != 0) FadeInLogic();
+    }
+
+    private void FadeInLogic()
+    {
         fadeInLeft = Mathf.Max(fadeInLeft - Time.deltaTime, 0);
 
-        var newColor = sprite.color;
-        newColor.a = Mathf.Lerp(1, 0, fadeInLeft / fadeInTime);
-        sprite.color = newColor;
+        foreach (var sprite in sprites)
+        {
+            var newColor = sprite.color;
+            newColor.a = Mathf.Lerp(1, 0, fadeInLeft / fadeInTime);
+            sprite.color = newColor;
+        }
     }
 
     public void Damage(int damage = 1)
@@ -62,6 +69,7 @@ public class MonsterLife : MonoBehaviour
 
     public void FadeIn(float _fadeInTime)
     {
+        fadeInTime = _fadeInTime;
         fadeInLeft = _fadeInTime;
     }
 
@@ -86,7 +94,7 @@ public class MonsterLife : MonoBehaviour
         THE_BOY = true;
     }
 
-    private float fadeInTime = 0.5f;
+    private float fadeInTime = 1f;
     private float fadeInLeft;
-    private SpriteRenderer sprite;
+    private SpriteRenderer[] sprites;
 }

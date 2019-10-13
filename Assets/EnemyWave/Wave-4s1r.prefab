@@ -32,7 +32,7 @@ Transform:
   - {fileID: 3130668450420683034}
   - {fileID: 3130668450670698801}
   - {fileID: 5214550021900864341}
-  - {fileID: 5729207099338315439}
+  - {fileID: 7601362738882609813}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59,6 +59,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ReptileMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
         type: 3}
@@ -167,9 +177,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c810a750a555ce84091332819db92524, type: 3}
---- !u!224 &5729207099338315439 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
+--- !u!4 &7601362738882609813 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
     type: 3}
   m_PrefabInstance: {fileID: 1087076967391001580}
   m_PrefabAsset: {fileID: 0}
@@ -189,6 +199,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873645921533590711, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2873645921850147141, guid: 49e2859874a9916439d03436ec6cfa94,
         type: 3}
@@ -320,6 +340,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2399998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873645921533590711, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2873645921850147141, guid: 49e2859874a9916439d03436ec6cfa94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -444,6 +474,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SimpleMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873645921533590711, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2873645921850147141, guid: 49e2859874a9916439d03436ec6cfa94,
         type: 3}
@@ -574,6 +619,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873645921533590711, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2873645921850147141, guid: 49e2859874a9916439d03436ec6cfa94,
         type: 3}

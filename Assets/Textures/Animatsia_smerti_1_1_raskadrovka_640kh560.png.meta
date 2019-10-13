@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: 96fb73bedc0f19a47b50b3eb545a57cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -741103259291679221
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_0
+  - first:
+      213: 2429027744139379032
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_1
+  - first:
+      213: 5438726422481069534
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_2
+  - first:
+      213: 7972652719898031865
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_3
+  - first:
+      213: -7265022084743252039
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_4
+  - first:
+      213: -3440797776331472984
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_5
+  - first:
+      213: -5627972703872501072
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_6
+  - first:
+      213: -7675200934383568886
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_7
+  - first:
+      213: 755322746308789149
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_8
+  - first:
+      213: 1821612116512169157
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_9
+  - first:
+      213: 2938326169966226859
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_10
+  - first:
+      213: -7944993867078544163
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_11
+  - first:
+      213: -4862671923476061065
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_12
+  - first:
+      213: -3776182343514081923
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_13
+  - first:
+      213: -960287936961065960
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_14
+  - first:
+      213: -3715147532730146464
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_15
+  - first:
+      213: -2952072021255037816
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_16
+  - first:
+      213: 6143786795745178160
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_17
+  - first:
+      213: -3659748186265736846
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_18
+  - first:
+      213: 1385995336451817594
+    second: Animatsia_smerti_1_1_raskadrovka_640kh560_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 320
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca85adc12b76ff4a8da386d4ed80acd
+      internalID: -741103259291679221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47678546f24563b49b8e53c1329ee650
+      internalID: 2429027744139379032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e94cdb7f086045498eeb8c5c848816d
+      internalID: 5438726422481069534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7c8e1266c8d6247a2a29257a1c2e4d
+      internalID: 7972652719898031865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984726fa8d9b44f46ae92e31e8c86a9f
+      internalID: -7265022084743252039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565a7637a7fa840438a3117bbc13d499
+      internalID: -3440797776331472984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41498efdd297a5443b84d091eeb5e09f
+      internalID: -5627972703872501072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3896a9a496cc4a941b65dc044b8ec5c5
+      internalID: -7675200934383568886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c6a82b9fd3c794fbec2f66c6203fd1
+      internalID: 755322746308789149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b297169e210dfd40b2c02c9bc749a05
+      internalID: 1821612116512169157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35177032ac6cae4d8b8840c13082210
+      internalID: 2938326169966226859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd8ee3c487df8445a77dd5d0b76f76b
+      internalID: -7944993867078544163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc41f12c2fa56b43a89b6550d9a6090
+      internalID: -4862671923476061065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddef3630a62c69341b9542fe4c221d58
+      internalID: -3776182343514081923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77afa7a91a80ad74ea96d1dadcded60d
+      internalID: -960287936961065960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edd8f178a9b57d4c99564ae16fff839
+      internalID: -3715147532730146464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc9a20443190d5489b9a4e3b5c07892
+      internalID: -2952072021255037816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7aa88c1a868604dab93009a5892ae6
+      internalID: 6143786795745178160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163277c88c5e9d34dafa7a2a536d8e96
+      internalID: -3659748186265736846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_1_1_raskadrovka_640kh560_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0facdff995255449c5dcac68eeb335
+      internalID: 1385995336451817594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

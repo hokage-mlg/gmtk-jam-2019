@@ -56,9 +56,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 4
-  absorbPrefab: {fileID: 4561057029417634086, guid: aa5acee1df1ebfd458c19c796b2c701c,
+  absorbPrefab: {fileID: 5902167019511450196, guid: 020984a1d5cb01647bdf04f79e42e9a8,
     type: 3}
-  enemyExplosionPrefab: {fileID: 3286946789625850104, guid: cd1b0312ce994734bb0fa0f780502358,
+  enemyExplosionPrefab: {fileID: 4315148799679399590, guid: 5e92d0f32688a8e4d80e5d03cb03a7bd,
     type: 3}
 --- !u!61 &8883467259405946828
 BoxCollider2D:

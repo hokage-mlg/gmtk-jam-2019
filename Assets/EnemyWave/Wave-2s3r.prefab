@@ -30,9 +30,9 @@ Transform:
   m_Children:
   - {fileID: 8148711125864006944}
   - {fileID: 8148711125717531803}
-  - {fileID: 1578067770191813422}
-  - {fileID: 1941191045921377943}
-  - {fileID: 1941191046321059811}
+  - {fileID: 3682010338717290260}
+  - {fileID: 4327733133854759597}
+  - {fileID: 4327733135336498137}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59,6 +59,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ReptileMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.433
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
         type: 3}
@@ -165,16 +180,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c810a750a555ce84091332819db92524, type: 3}
---- !u!224 &1578067770191813422 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
+--- !u!4 &3682010338717290260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
     type: 3}
   m_PrefabInstance: {fileID: 6157060023301912173}
   m_PrefabAsset: {fileID: 0}
@@ -189,6 +199,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ReptileMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.368
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
         type: 3}
@@ -295,16 +325,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c810a750a555ce84091332819db92524, type: 3}
---- !u!224 &1941191045921377943 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
+--- !u!4 &4327733133854759597 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
     type: 3}
   m_PrefabInstance: {fileID: 6513427469960061908}
   m_PrefabAsset: {fileID: 0}
@@ -319,6 +344,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ReptileMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.703
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
         type: 3}
@@ -425,16 +470,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4653389663410524337, guid: c810a750a555ce84091332819db92524,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c810a750a555ce84091332819db92524, type: 3}
---- !u!224 &1941191046321059811 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4653389663735491907, guid: c810a750a555ce84091332819db92524,
+--- !u!4 &4327733135336498137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7380104140017662329, guid: c810a750a555ce84091332819db92524,
     type: 3}
   m_PrefabInstance: {fileID: 6513427470363859616}
   m_PrefabAsset: {fileID: 0}
@@ -449,6 +489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SimpleMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.668
       objectReference: {fileID: 0}
     - target: {fileID: 2873645921533590711, guid: 49e2859874a9916439d03436ec6cfa94,
         type: 3}
@@ -584,6 +629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 117048422991295782, guid: 49e2859874a9916439d03436ec6cfa94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.062
       objectReference: {fileID: 0}
     - target: {fileID: 2873645921533590711, guid: 49e2859874a9916439d03436ec6cfa94,
         type: 3}

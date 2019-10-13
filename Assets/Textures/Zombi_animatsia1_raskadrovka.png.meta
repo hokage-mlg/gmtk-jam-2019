@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 840
+  spritePixelsToUnits: 210
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,9 +88,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -99,9 +99,10 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -110,9 +111,10 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,6 +123,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,9 +132,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
-        width: 1100
-        height: 1200
+        y: 300
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63ab57de738273d48976b40066bda17f
+      spriteID: 35fe68eca37649a4d83a9d5cabd4393d
       internalID: -6270344768806711389
       vertices: []
       indices: 
@@ -149,10 +152,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_1
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 1200
-        width: 1100
-        height: 1200
+        x: 275
+        y: 300
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54053a14ff546934aa8457b47a3f5c18
+      spriteID: 14c1445ac1b7e6440a8cc2193295db46
       internalID: -7196796002749425503
       vertices: []
       indices: 
@@ -170,10 +173,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_2
       rect:
         serializedVersion: 2
-        x: 2200
-        y: 1200
-        width: 1100
-        height: 1200
+        x: 550
+        y: 300
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 632b222038df3b149988266442794f2f
+      spriteID: 2341e9041857a41448f7dd9e5a94886b
       internalID: 4862779707261030223
       vertices: []
       indices: 
@@ -191,10 +194,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_3
       rect:
         serializedVersion: 2
-        x: 3300
-        y: 1200
-        width: 1100
-        height: 1200
+        x: 825
+        y: 300
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,7 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68d5b29c78258e14e8a608f65d2fce60
+      spriteID: f62752c275caff64ea96d8a79dab77cf
       internalID: 1197051340916630108
       vertices: []
       indices: 
@@ -212,10 +215,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_4
       rect:
         serializedVersion: 2
-        x: 4400
-        y: 1200
-        width: 1100
-        height: 1200
+        x: 1100
+        y: 300
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,7 +226,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc41a0c4a2901784e82e9d0ec6137351
+      spriteID: 135e4de2133073b49a815a40da9b639c
       internalID: -3411312213702724837
       vertices: []
       indices: 
@@ -235,8 +238,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1100
-        height: 1200
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,7 +247,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7018195620f5fa64db47769d1427911a
+      spriteID: 5d2dd817941139943bdf1991d35f6d78
       internalID: -366635778346423637
       vertices: []
       indices: 
@@ -254,10 +257,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_6
       rect:
         serializedVersion: 2
-        x: 1100
+        x: 275
         y: 0
-        width: 1100
-        height: 1200
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70de47888f694b14fbfaf0345cfe2bf7
+      spriteID: 847de4727a02f16439eaf01273ff6ca4
       internalID: -3947639372003892429
       vertices: []
       indices: 
@@ -275,10 +278,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_7
       rect:
         serializedVersion: 2
-        x: 2200
+        x: 550
         y: 0
-        width: 1100
-        height: 1200
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,7 +289,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e371677615005419274233979903a7
+      spriteID: fc82adf383e5a0640a5872dcd1b2871b
       internalID: 4251988275797629697
       vertices: []
       indices: 
@@ -296,10 +299,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_8
       rect:
         serializedVersion: 2
-        x: 3300
+        x: 825
         y: 0
-        width: 1100
-        height: 1200
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,7 +310,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96ca8c30853ea0f4bb862a87f217a4f0
+      spriteID: 691b09d6e9dbbc74cbb53c3c050bddae
       internalID: 7157769929386002955
       vertices: []
       indices: 
@@ -317,10 +320,10 @@ TextureImporter:
       name: Zombi_animatsia1_raskadrovka_9
       rect:
         serializedVersion: 2
-        x: 4400
+        x: 1100
         y: 0
-        width: 1100
-        height: 1200
+        width: 275
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,7 +331,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6af7c6fbca917864c8c60f5c881d5077
+      spriteID: 346ae7ee412cba7478e183b785627f6c
       internalID: 1584872253509876062
       vertices: []
       indices: 

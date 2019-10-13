@@ -19,14 +19,18 @@ public class PlayerSkills : MonoBehaviour
             string AllSkills = PlayerPrefs.GetString("SkillString");
             string[] skillsStr = AllSkills.Split(new char[] { ' ' },
                 StringSplitOptions.RemoveEmptyEntries);
+
             foreach (var i in skillsStr)
             {
                 skills.Add(IQ7000DictionarySkills.GetValue(i));
             }
+            
             foreach (var i in skills)
             {
-                if(i is PassiveSkill)
-                    i.ActiAcquireSkill(); 
+                if (i is PassiveSkill)
+                {
+                    i.ActiAcquireSkill();
+                }
                 if(i is ActiveSkill)
                 {
                     ForActiveSkills.AddSkills(i as ActiveSkill);

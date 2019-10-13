@@ -35,7 +35,7 @@ public class ActiveSkillsManager : MonoBehaviour
        {
             if (Input.GetKeyDown(keys[i]) && CoolDown[i] == 0f)
             {
-                
+                    
                     activeSkills[i].ActiveResult();
                     if (!activeSkills[i].isInstantSkill)
                     {

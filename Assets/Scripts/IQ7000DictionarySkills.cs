@@ -4,9 +4,9 @@ using UnityEngine;
 using System.Linq;
 
 public class IQ7000DictionarySkills : MonoBehaviour
-{
+{ 
     public static Dictionary<string, SkillBase> skills ;
-    private void Start()
+    private void Awake()
     {
         skills = new Dictionary<string, SkillBase>();
 
