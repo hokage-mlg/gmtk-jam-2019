@@ -8,7 +8,7 @@ public abstract class SkillBase
     [Multiline]
     public string Description;
     public Sprite img;
-
+    
     public void SaveSkill()
     {
         if (PlayerPrefs.HasKey("SkillString"))
