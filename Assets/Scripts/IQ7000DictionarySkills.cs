@@ -16,6 +16,10 @@ public class IQ7000DictionarySkills : MonoBehaviour
         skills.Add("GhostMode", ghost);
         ActiveSpeedSkill active = new ActiveSpeedSkill();
         skills.Add("ActiveSpeedSkill", active);
+        DashSkill dash = new DashSkill();
+        skills.Add("DashSkill", dash);
+        DodgeSkill dodge = new DodgeSkill();
+        skills.Add("DodgeSkill", dodge);
     }
 
     public static SkillBase GetValue(string Name)
