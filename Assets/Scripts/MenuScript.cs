@@ -16,6 +16,9 @@ public class MenuScript : MonoBehaviour
     private GameObject BackBtn = null;
 
     [SerializeField]
+    private GameObject Options = null;
+
+    [SerializeField]
     private GameObject lvlButton = null;
 
     public List<string> Scenes = new List<string>();
@@ -27,6 +30,7 @@ public class MenuScript : MonoBehaviour
         InstLevels();
         UpdateLevels();
         Levels.SetActive(false);
+        Options.SetActive(false);
     }
 
     public void ClickButtonContinue()
@@ -49,7 +53,19 @@ public class MenuScript : MonoBehaviour
         PlayerPrefs.SetInt("CurrentScene", 0);
         SceneManager.LoadScene(Scenes[0]);
     }
+    public void ClickOptions()
+    {
+        MainMenu.SetActive(false);
+        Options.SetActive(true);
+        BackBtn.SetActive(true);
+    }
 
+    public void ClickOptionsBack()
+    {
+        MainMenu.SetActive(true);
+        Options.SetActive(false);      
+        BackBtn.SetActive(false);
+    }
     public void ClickLevels()
     {
         MainMenu.SetActive(false);
@@ -97,7 +113,7 @@ public class MenuScript : MonoBehaviour
             }
         }
     }
-
+    
     public void Exit()
     {
         Application.Quit();

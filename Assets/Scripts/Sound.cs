@@ -30,6 +30,7 @@ public class Sound
     public float spread;
     public float minDistance;
     public float maxDistance;
+    
     [HideInInspector]
     public AudioSource source;
 }

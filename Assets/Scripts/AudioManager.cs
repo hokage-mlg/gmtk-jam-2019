@@ -6,10 +6,11 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
+    public SetVol sliderValue;
     public static Sound[] sounds;
     public Sound[] soundsToRegister;
     public static AudioManager instance;
-
+    public static float slideVal;
     // Name -> (time since last sound, maximum value)
     public static Dictionary<string, Vector2> Clips = new Dictionary<string, Vector2>();
 
@@ -36,8 +37,8 @@ public class AudioManager : MonoBehaviour
     {
         if (Clips.ContainsKey(name))
         {
-            float ltp = Clips[name].x;
-            volume = Mathf.Lerp(lowestSoundValue, Clips[name].y, Mathf.Clamp(Time.time - ltp, 0, 1));
+            float ltp = Clips[name].x;         
+            volume = Mathf.Lerp(lowestSoundValue, Clips[name].y, Mathf.Clamp(Time.time - ltp, 0, 1));          
             Clips[name] = new Vector2(Time.time, Clips[name].y);
         }
         else
@@ -49,11 +50,12 @@ public class AudioManager : MonoBehaviour
 
     public static void Play(string name, AudioSource source)
     {
-
+        var slideV = new SetVol();
+        slideV.SetLevel(slideVal);
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source = source;
         s.source.clip = s.clip;
-        s.source.volume = GetVolume(name, s.volume);
+        s.source.volume = GetVolume(name, s.volume)*slideVal;
         s.source.pitch = s.pitch;
         s.source.panStereo = s.stereoPan;
         s.source.spatialBlend = s.spatialBlend;
