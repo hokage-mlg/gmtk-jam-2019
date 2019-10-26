@@ -332,8 +332,10 @@ GameObject:
   - component: {fileID: 2873645921850147138}
   - component: {fileID: 2873645921850147137}
   - component: {fileID: 1986228130421800251}
-  - component: {fileID: -4244844303079205824}
   - component: {fileID: -8664493499008248624}
+  - component: {fileID: 4170874774547565885}
+  - component: {fileID: 7938150299196942965}
+  - component: {fileID: 8769902977028094434}
   m_Layer: 0
   m_Name: SimpleMonster
   m_TagString: Enemy
@@ -424,21 +426,6 @@ MonoBehaviour:
     type: 3}
   enemyExplosionPrefab: {fileID: 3286946789625850104, guid: cd1b0312ce994734bb0fa0f780502358,
     type: 3}
---- !u!114 &-4244844303079205824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2873645921850147136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb88fe879c2765e48858ed716d07844f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemySpeed: 4
-  CoolDown: 1.5
-  RandomImpact: 0.9
 --- !u!82 &-8664493499008248624
 AudioSource:
   m_ObjectHideFlags: 0
@@ -535,6 +522,56 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4170874774547565885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873645921850147136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851423767a200cf4eaf5bea045e99598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 3.5
+  maxAccel: 100
+  maxRotation: 200
+  maxAngularAccel: 10000
+  orientation: 0
+  rotation: 0
+  velocity: {x: 0, y: 0}
+--- !u!114 &7938150299196942965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873645921850147136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f9dfe6546f7b249883eeefc0415823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+--- !u!114 &8769902977028094434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873645921850147136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a63b3382e5609146935e14638fa450b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  targetRadius: 0
+  slowRadius: 0.1
+  timeToTarget: 0.1
+  offsetAngleMax: 40
+  cooldownRange: {x: 3, y: 5}
 --- !u!1 &4183647638066128296
 GameObject:
   m_ObjectHideFlags: 0

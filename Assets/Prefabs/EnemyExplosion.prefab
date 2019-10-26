@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5544618844438382203}
   - component: {fileID: 3581136307407725650}
   - component: {fileID: -4364024366233820581}
+  - component: {fileID: 886708555568041804}
   m_Layer: 0
   m_Name: EnemyExplosion
   m_TagString: Untagged
@@ -115,11 +116,10 @@ AudioSource:
   m_GameObject: {fileID: 3286946789625850104}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -5813178484243039415, guid: 17f949ea84c9c534da4fca4d9a11d60f,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: 80d767c4194e727458472a10aa464bfd, type: 3}
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.113
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -271,6 +271,18 @@ MonoBehaviour:
   lifeSpanIn: 0.25
   lifeSpanOut: 0.25
   shouldFadeOut: 1
+--- !u!114 &886708555568041804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3286946789625850104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40053c18a1d9d6439997093a8d76c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7393313301939450255
 GameObject:
   m_ObjectHideFlags: 0

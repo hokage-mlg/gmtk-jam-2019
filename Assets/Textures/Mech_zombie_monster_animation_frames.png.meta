@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: a7c90dc5313167f4cbfb5f25a4c00c89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2356149219138287588
+    second: Mech_zombie_monster_animation_frames_0
+  - first:
+      213: -3244697094323972160
+    second: Mech_zombie_monster_animation_frames_1
+  - first:
+      213: -1787644225382447015
+    second: Mech_zombie_monster_animation_frames_2
+  - first:
+      213: 8738266153545748862
+    second: Mech_zombie_monster_animation_frames_3
+  - first:
+      213: -8922522353407239014
+    second: Mech_zombie_monster_animation_frames_4
+  - first:
+      213: 5762439237340081721
+    second: Mech_zombie_monster_animation_frames_5
+  - first:
+      213: -4924713213641064578
+    second: Mech_zombie_monster_animation_frames_6
+  - first:
+      213: -357495851711532936
+    second: Mech_zombie_monster_animation_frames_7
+  - first:
+      213: 7539432726357056636
+    second: Mech_zombie_monster_animation_frames_8
+  - first:
+      213: -806679257947912665
+    second: Mech_zombie_monster_animation_frames_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 157
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7472756bfb26dbe4c9619e3b85ecee5d
+      internalID: 2356149219138287588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 157
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c7867e222aa2245812db1691ae0a43
+      internalID: -3244697094323972160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 157
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e208bc15c59de9b49b60a0f3975463e5
+      internalID: -1787644225382447015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 157
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fea34df1fc0ba4582677e435fcbd09
+      internalID: 8738266153545748862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_4
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 157
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f362a563db6bd74c98c461e8bc0e4da
+      internalID: -8922522353407239014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ede0bc616e3e5e4d90c1d58e56929e5
+      internalID: 5762439237340081721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e8980817fdec64aa0d51559ad05ff5
+      internalID: -4924713213641064578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1035ef7e2e26b45accaf6a88a26d56
+      internalID: -357495851711532936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_8
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bbe22fba1f5e04a9c09c1537bae0c9
+      internalID: 7539432726357056636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech_zombie_monster_animation_frames_9
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 147.6
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54959615b24bda44b050787120a3757
+      internalID: -806679257947912665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

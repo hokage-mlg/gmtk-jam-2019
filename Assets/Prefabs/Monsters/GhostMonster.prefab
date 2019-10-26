@@ -229,7 +229,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3258448360597376789}
   - component: {fileID: -3709421567010912052}
-  - component: {fileID: 7182972875888833430}
+  - component: {fileID: 6499421595224703870}
+  - component: {fileID: 6916804140422041214}
+  - component: {fileID: 1091892299975544832}
+  - component: {fileID: 3130938310820312409}
   - component: {fileID: 5610511982554001868}
   - component: {fileID: 9139023250819493270}
   - component: {fileID: 852487844451118722}
@@ -277,7 +280,7 @@ MonoBehaviour:
     type: 3}
   enemyExplosionPrefab: {fileID: 3286946789625850104, guid: cd1b0312ce994734bb0fa0f780502358,
     type: 3}
---- !u!114 &7182972875888833430
+--- !u!114 &6499421595224703870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,10 +289,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 2611012751803154452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69a5e7805414224438c6023db81fe0c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 851423767a200cf4eaf5bea045e99598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySpeed: 3
+  maxSpeed: 3
+  maxAccel: 300
+  maxRotation: 200
+  maxAngularAccel: 10000
+  orientation: 0
+  rotation: 0
+  velocity: {x: 0, y: 0}
+--- !u!114 &6916804140422041214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611012751803154452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f9dfe6546f7b249883eeefc0415823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
+--- !u!114 &1091892299975544832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611012751803154452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c1d796790c0c0408260dacf14ea289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
+  targetRadius: 0
+  slowRadius: 0.1
+  timeToTarget: 0.1
+--- !u!114 &3130938310820312409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2611012751803154452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97189de83c8b1a438c9a6f272905ff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
   CoolDown: 5
   GhostBoostSpeed: 7
   PacifistInBoost: 1

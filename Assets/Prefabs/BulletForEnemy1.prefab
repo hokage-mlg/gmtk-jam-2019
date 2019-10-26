@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5026985979506456184}
   - component: {fileID: 1613301677454036974}
   - component: {fileID: 4537968617460850083}
+  - component: {fileID: 2029696957105847991}
+  - component: {fileID: 6961320020642883888}
+  - component: {fileID: 2529535576517682936}
   m_Layer: 0
   m_Name: BulletForEnemy1
   m_TagString: Untagged
@@ -85,6 +88,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletSpeed: 8
   BulletLifeLength: 3
+--- !u!114 &2029696957105847991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556247329906426865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 0
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.75
+  m_Color: {r: 0.648274, g: 0.7830189, b: 0.37304202, a: 1}
+  m_Intensity: 0.2
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 10
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 0.25
+  m_ShapeLightFalloffSize: 1
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &6961320020642883888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556247329906426865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f264236d76b866469097838aa0dc827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpanIn: 0.25
+  lifeSpanOut: 0.25
+  shouldFadeOut: 0
+--- !u!114 &2529535576517682936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556247329906426865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb0e913c00601d4bb7d8ac1d2ef564c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlickerValueRange: {x: -0.1, y: 0.2}
+  FlickerPeriodRange: {x: 0.05, y: 0.1}
+  SinFactor: 0
 --- !u!1 &8514799866707657762
 GameObject:
   m_ObjectHideFlags: 0

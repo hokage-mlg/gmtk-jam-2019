@@ -519,7 +519,10 @@ GameObject:
   - component: {fileID: 4653389663735491908}
   - component: {fileID: 4653389663735491911}
   - component: {fileID: 8999717580740530493}
-  - component: {fileID: -6425090816391174824}
+  - component: {fileID: 4922783919604684963}
+  - component: {fileID: 7589481869606093919}
+  - component: {fileID: 3230158739323297929}
+  - component: {fileID: -600990550494270343}
   - component: {fileID: -4325479809275201537}
   m_Layer: 0
   m_Name: ReptileMonster
@@ -630,7 +633,7 @@ MonoBehaviour:
     type: 3}
   enemyExplosionPrefab: {fileID: 3286946789625850104, guid: cd1b0312ce994734bb0fa0f780502358,
     type: 3}
---- !u!114 &-6425090816391174824
+--- !u!114 &4922783919604684963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -639,13 +642,67 @@ MonoBehaviour:
   m_GameObject: {fileID: 4653389663735491910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68c1cd3be3cf7fa4cab46b182eed567f, type: 3}
+  m_Script: {fileID: 11500000, guid: 851423767a200cf4eaf5bea045e99598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySpeed: 3.5
-  LizardBoostSpeed: 5
-  RandomBoostRange: {x: 4, y: 12}
-  LizardBoostTime: 2
+  maxSpeed: 3.5
+  maxAccel: 350
+  maxRotation: 200
+  maxAngularAccel: 10000
+  orientation: 0
+  rotation: 0
+  velocity: {x: 0, y: 0}
+--- !u!114 &7589481869606093919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653389663735491910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f9dfe6546f7b249883eeefc0415823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
+  target: {fileID: 0}
+--- !u!114 &3230158739323297929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653389663735491910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c1d796790c0c0408260dacf14ea289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
+  target: {fileID: 4305704709854959933, guid: 0b38f5738ea76fc47bbc9479eb38ab82, type: 3}
+  targetRadius: 0
+  slowRadius: 0
+  timeToTarget: 0.1
+--- !u!114 &-600990550494270343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653389663735491910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e698366859eda41b6cfd1795b4c68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 0
+  target: {fileID: 0}
+  boostedSpeed: 5
+  cooldownTime: 6
+  boostTime: 2
 --- !u!82 &-4325479809275201537
 AudioSource:
   m_ObjectHideFlags: 0

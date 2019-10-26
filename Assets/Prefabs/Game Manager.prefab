@@ -83,8 +83,8 @@ GameObject:
   - component: {fileID: 406660203}
   - component: {fileID: 83602702}
   - component: {fileID: 1705778125510524197}
-  - component: {fileID: 92031012}
   - component: {fileID: 152912017}
+  - component: {fileID: 5526407621052106132}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: GameController
@@ -170,20 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05ff95a30fbdc3448bd28384ed1dd4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &92031012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3334064150391581341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53c21b00ba01f4b4f8d759266cb1c236, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneNumber: 1
-  NextSceneName: Level2
 --- !u!114 &152912017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,4 +181,21 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 558c0df5fbf5a3f4fbce48c21d4bd316, type: 3}
   m_Name: 
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
+--- !u!114 &5526407621052106132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3334064150391581341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c21b00ba01f4b4f8d759266cb1c236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextSceneName: InfinityLevel1
+  SceneNumber: 3
+  isPointVictory: 0
+  pointsToVictory: 0
+  TotalValue: 0

@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: e6da173634e26ae4a8e563f7105fbe7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1792682374963044374
+    second: Hound_monster_animation_frames_0
+  - first:
+      213: -2741607491619103347
+    second: Hound_monster_animation_frames_1
+  - first:
+      213: -3627710588777960915
+    second: Hound_monster_animation_frames_2
+  - first:
+      213: 3796698612404436903
+    second: Hound_monster_animation_frames_3
+  - first:
+      213: -8887397931034049658
+    second: Hound_monster_animation_frames_4
+  - first:
+      213: 356205661744019213
+    second: Hound_monster_animation_frames_5
+  - first:
+      213: -5912112214181126363
+    second: Hound_monster_animation_frames_6
+  - first:
+      213: 2459142223045588221
+    second: Hound_monster_animation_frames_7
+  - first:
+      213: 5609116576200778632
+    second: Hound_monster_animation_frames_8
+  - first:
+      213: 2312874551847274037
+    second: Hound_monster_animation_frames_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24635314e166bff488a21f6cf1f82007
+      internalID: 1792682374963044374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 265.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9beafa31e103f44827ec0124e33e92
+      internalID: -2741607491619103347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 265.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8313a02abf4ef6044a474b28e5348ff6
+      internalID: -3627710588777960915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 265.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa276557f5dcf914589b31a31f869f1e
+      internalID: 3796698612404436903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 265.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b152f808d30834428bff2a6d72e9065
+      internalID: -8887397931034049658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545e70ed05d898e409db865abe0a1d3e
+      internalID: 356205661744019213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbadef4acba639c49a8479b7542b0513
+      internalID: -5912112214181126363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_7
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 0.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ad2d7a5157d834e957645a4c108b09
+      internalID: 2459142223045588221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef1cd57c080f1c40899e3bc3937ac67
+      internalID: 5609116576200778632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hound_monster_animation_frames_9
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0.5
+        width: 173.6
+        height: 265.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cc194d2cac4eb4d8c78c1630f5a1ec
+      internalID: 2312874551847274037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

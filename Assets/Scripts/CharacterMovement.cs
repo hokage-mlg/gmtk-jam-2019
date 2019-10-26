@@ -6,6 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
     public float speed = 12f;
+<<<<<<< HEAD
 
     [SerializeField]
     public bool mov = true;
@@ -18,11 +19,15 @@ public class CharacterMovement : MonoBehaviour
     [HideInInspector]
     public AudioSource walkingSound;
     private Vector3 lastMoveDir;
+=======
+    
+    private Animator anim;
+    private AudioSource audio;
+>>>>>>> 9aea4da9469c0af582c57ed4db51997e10d526ba
 
     private void Start()
     {
-        var sounds = GetComponents<AudioSource>();
-        walkingSound = sounds[1];
+        audio = GetComponent<AudioSource>();       
         anim = GetComponentInChildren<Animator>();
         mainCamera = Camera.main;
     }
@@ -32,11 +37,27 @@ public class CharacterMovement : MonoBehaviour
         Movement();
         Rotation();
     }
+<<<<<<< HEAD
 
     public void Rotation()
     {
 
         if (spin == true)
+=======
+    private void Rotation()
+    {
+        var mousepos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Quaternion rot = Quaternion.LookRotation(transform.position - mousepos, Vector3.forward);
+        transform.rotation = rot;
+        transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
+    }
+    
+    private void Movement()
+    {       
+        Vector2 direction = new Vector2();
+        direction += new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if (direction.magnitude > 1)
+>>>>>>> 9aea4da9469c0af582c57ed4db51997e10d526ba
         {
             var mousepos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             Quaternion rot = Quaternion.LookRotation(transform.position - mousepos, Vector3.forward);
@@ -55,6 +76,7 @@ public class CharacterMovement : MonoBehaviour
 
             if (direction.magnitude > 1)
             {
+<<<<<<< HEAD
                 direction.Normalize();
             }
 
@@ -79,6 +101,18 @@ public class CharacterMovement : MonoBehaviour
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
             lastMoveDir = direction;
         }
+=======
+                AudioManager.Pause("Walk", audio);
+                anim.Play("HeroIdle");
+            }
+            else if (AudioManager.isPlaying("Walk", audio) == false)
+            {
+                AudioManager.Play("Walk", audio);
+                anim.Play("HeroWalking");
+            }        
+        }
+        transform.Translate(direction * speed * Time.deltaTime, Space.World);      
+>>>>>>> 9aea4da9469c0af582c57ed4db51997e10d526ba
     }
 
     public Vector2 getLastMoveDir()
@@ -88,4 +122,9 @@ public class CharacterMovement : MonoBehaviour
         return lastMoveDir;
     }
     private Camera mainCamera = null;
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 9aea4da9469c0af582c57ed4db51997e10d526ba

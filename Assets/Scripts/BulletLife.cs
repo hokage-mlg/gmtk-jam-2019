@@ -12,6 +12,8 @@ public class BulletLife : MonoBehaviour
 
     void Start()
     {
+        var audio = GetComponent<AudioSource>();
+        AudioManager.Play("WeaponShot", audio);
         TTDLeft = timeToDestruction;
     }
 

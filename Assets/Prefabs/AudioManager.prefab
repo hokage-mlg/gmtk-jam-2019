@@ -46,7 +46,7 @@ MonoBehaviour:
   soundsToRegister:
   - name: Blink
     clip: {fileID: 8300000, guid: 732a19e36ed53c740a6825fc15799ac6, type: 3}
-    volume: 0.409
+    volume: 0.358
     pitch: 1
     stereoPan: 0
     spatialBlend: 0.8
@@ -97,7 +97,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: LizardRun
     clip: {fileID: 8300000, guid: a76e5898a1a8abb43bad640dd4a2b16f, type: 3}
-    volume: 0.404
+    volume: 0.345
     pitch: 1
     stereoPan: 0
     spatialBlend: 0.8
@@ -165,7 +165,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Block
     clip: {fileID: 8300000, guid: 2f3c128b4bff49143aa777ecaf0c5eae, type: 3}
-    volume: 0.61
+    volume: 0.404
     pitch: 1
     stereoPan: 0
     spatialBlend: 0.8
@@ -199,7 +199,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Explosion
     clip: {fileID: 8300000, guid: 80d767c4194e727458472a10aa464bfd, type: 3}
-    volume: 0.707
+    volume: 0.4
     pitch: 1
     stereoPan: 0
     spatialBlend: 0.8
@@ -233,7 +233,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: WeaponShot
     clip: {fileID: 8300000, guid: f0e0a83e3a2a3974d9465ce770f082a2, type: 3}
-    volume: 0.8
+    volume: 0.7
     pitch: 1
     stereoPan: 0
     spatialBlend: 0.8
@@ -246,5 +246,5 @@ MonoBehaviour:
     dopplerLevel: 1
     spread: 0
     minDistance: 1
-    maxDistance: 8
+    maxDistance: 500
     source: {fileID: 0}

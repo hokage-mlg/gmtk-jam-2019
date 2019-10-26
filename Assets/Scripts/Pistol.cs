@@ -6,7 +6,7 @@ public class Pistol : WeaponSkill
 {
     private float randomShootingAngle = 0;
     private GameObject bulletPrefab;
-
+    private AudioSource WeaponShot;
     public Pistol()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -14,15 +14,15 @@ public class Pistol : WeaponSkill
         Description = "Your first gun";
         ReloadTime = 0.6f;
         bulletPrefab = Resources.Load("Pistol/HeroBullet") as GameObject;
+        
+
     }
 
     public override void Shoot(Vector3 mousePos, Vector3 screenPoint)
     {
         var bullet = GameObject.Instantiate(bulletPrefab, Player.transform.position, new Quaternion());
-        /*if (data.sound)
-        {
-            data.sound.Play();
-        }*/
+       
+        
 
         var offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
         var angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;

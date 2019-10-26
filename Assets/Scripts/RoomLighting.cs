@@ -16,10 +16,13 @@ public class RoomLighting : MonoBehaviour
     private void Start()
     {
         sceneLight = GetComponentInChildren<Light2D>();
-
+        Light = DefaultLight;
         var arena = GetComponent<ArenaEnemySpawner>();
-        maxvalue = arena.EnemyCount();
-        RecalculateLight();
+        if (arena)
+        {
+            maxvalue = arena.EnemyCount();
+            RecalculateLight();
+        }
         NewLight(Light);
 
         SetSwampMaterial();
@@ -38,9 +41,25 @@ public class RoomLighting : MonoBehaviour
         t = 0.0f;
     }
 
+    public void SetMaxValue (float val)
+    {
+        if (val > 0)
+        {
+            maxvalue = val;
+            RecalculateLight();
+            t = 0.0f;
+        }
+    }
+
+    public float GetCurVal()
+    {
+        return CurrentVal;
+    }
+
     private void RecalculateLight()
     {
         Light = 0.1f + Mathf.Pow(Mathf.Clamp01(TotalValue / maxvalue), 1.7f) * 0.9f;
+       // Debug.Log(Light);
     }
 
     private void Update()
@@ -82,6 +101,11 @@ public class RoomLighting : MonoBehaviour
         {
             sprite.sharedMaterial = swampMat;
         }
+        var emitters = swampInstance.GetComponentsInChildren<ParticleSystemRenderer>();
+        foreach (var emitter in emitters)
+        {
+            emitter.sharedMaterial = swampMat;
+        }
     }
     
     private void NewSwampLight()
@@ -102,4 +126,5 @@ public class RoomLighting : MonoBehaviour
     private float CurrentVal;
     float t = 0.0f;
     static float Light;
+    public float DefaultLight = 0.5f;
 }

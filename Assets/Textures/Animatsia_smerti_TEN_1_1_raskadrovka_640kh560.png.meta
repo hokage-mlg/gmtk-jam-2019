@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: ce83fc5f80dde8a4283249501232ffb1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3237583511170239628
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_0
+  - first:
+      213: 8121971197423381914
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_1
+  - first:
+      213: -6050930110162500144
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_2
+  - first:
+      213: -2658940329905887285
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_3
+  - first:
+      213: -9218325156715094144
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_4
+  - first:
+      213: 3219159725465486732
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_5
+  - first:
+      213: 2433201127650642075
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_6
+  - first:
+      213: 3566015821531968652
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_7
+  - first:
+      213: 2422137821504096363
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_8
+  - first:
+      213: -3466910030808625945
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_9
+  - first:
+      213: -5866354185282062231
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_10
+  - first:
+      213: 9054420910319406709
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_11
+  - first:
+      213: 1507548618672996359
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_12
+  - first:
+      213: -6220272031146573932
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_13
+  - first:
+      213: -4042099213515114189
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_14
+  - first:
+      213: 4034035812425090605
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_15
+  - first:
+      213: 609026511944005484
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_16
+  - first:
+      213: -2032729860784286615
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_17
+  - first:
+      213: 3354732155052316753
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_18
+  - first:
+      213: -5092219364111380671
+    second: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 320
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023c64b4952796a408816a3d6b0ed5d1
+      internalID: 3237583511170239628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94febdc5c44f4149b00df271b2482a0
+      internalID: 8121971197423381914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25ead3326ccf6d42b6737e804c058c5
+      internalID: -6050930110162500144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcf6ae576ef25e439298cc770ec425e
+      internalID: -2658940329905887285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1680
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a1df81555936c48b57fea9a4a6244f
+      internalID: -9218325156715094144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce8d40949c595542b36f18d654f67b6
+      internalID: 3219159725465486732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463b5c8ce026b1546b3f93fe5ab9bf92
+      internalID: 2433201127650642075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be567b9d714f8745b51272400923dcc
+      internalID: 3566015821531968652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c37022f6e5f564c96085e281c28800
+      internalID: 2422137821504096363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1120
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0055aee611a3034bbfa840c6d1e9dc3
+      internalID: -3466910030808625945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94aabcaa78df8d34bac9f1c3b5be4c76
+      internalID: -5866354185282062231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81f3f8960293c04b8ed1b9074171582
+      internalID: 9054420910319406709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1583dfeac8ae4428775c6a3edf3a56
+      internalID: 1507548618672996359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8547cbd36f7659438f240017d3ede85
+      internalID: -6220272031146573932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 560
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b53f378539302845ae036e2400ed48b
+      internalID: -4042099213515114189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ab7ecd170666a4897e6128e0a35581
+      internalID: 4034035812425090605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2853da7eb5c916941aec9a85df9da6f1
+      internalID: 609026511944005484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d5673ac789aea468e3127f5fee5856
+      internalID: -2032729860784286615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b51470e0b3d8547b1eca9cee3d0d40
+      internalID: 3354732155052316753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animatsia_smerti_TEN_1_1_raskadrovka_640kh560_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cea8d05e59af2148864030b35033adb
+      internalID: -5092219364111380671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

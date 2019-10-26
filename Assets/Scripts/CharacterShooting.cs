@@ -6,10 +6,15 @@ public class CharacterShooting : MonoBehaviour
 {
     [SerializeField]
     private GameObject mouseCursorObj = null;
-
+    [SerializeField]
+    bool ExtraWeapon;
     private void Start()
     {
-        weapon = new Pistol();
+        if (ExtraWeapon == true)   
+            weapon = new PistolHokage();    
+        else
+            weapon = new Pistol();
+        
         mainCamera = Camera.main;
         Cursor.visible = false;
         GameObject.Instantiate(mouseCursorObj);

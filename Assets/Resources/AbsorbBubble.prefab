@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4561057029417634080}
   - component: {fileID: 4561057029417634081}
   - component: {fileID: 622255901183802392}
+  - component: {fileID: 6523538050671964498}
   m_Layer: 0
   m_Name: AbsorbBubble
   m_TagString: Untagged
@@ -111,11 +112,10 @@ AudioSource:
   m_GameObject: {fileID: 4561057029417634086}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 8565313045126812073, guid: 17f949ea84c9c534da4fca4d9a11d60f,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2f3c128b4bff49143aa777ecaf0c5eae, type: 3}
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.062
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -199,3 +199,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6523538050671964498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4561057029417634086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d1742dd05989c4aa6733073b0d48b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

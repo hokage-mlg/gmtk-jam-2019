@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: da1df0106d570fe4d9b260c96a10887e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 264305711083742245
+    second: Hovering_monster_animation_frames_0
+  - first:
+      213: 7285898132100026757
+    second: Hovering_monster_animation_frames_1
+  - first:
+      213: 7272431729712004648
+    second: Hovering_monster_animation_frames_2
+  - first:
+      213: -5608039425854254963
+    second: Hovering_monster_animation_frames_3
+  - first:
+      213: -4159384796958522474
+    second: Hovering_monster_animation_frames_4
+  - first:
+      213: -1492581255466713723
+    second: Hovering_monster_animation_frames_5
+  - first:
+      213: -1059434341638575594
+    second: Hovering_monster_animation_frames_6
+  - first:
+      213: -6736201963006696072
+    second: Hovering_monster_animation_frames_7
+  - first:
+      213: -6444107005883627192
+    second: Hovering_monster_animation_frames_8
+  - first:
+      213: -6998916283752611896
+    second: Hovering_monster_animation_frames_9
+  - first:
+      213: 9120668136471282531
+    second: Hovering_monster_animation_frames_10
+  - first:
+      213: -8347009028140744728
+    second: Hovering_monster_animation_frames_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 530
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5048e7184a16a3438f3f7a8f00cec0f
+      internalID: 264305711083742245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_1
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1650
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfcf4cc55a844742880ef3d57337787
+      internalID: 7285898132100026757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_2
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 1650
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62984061df93a6c46b93c11fb73a404e
+      internalID: 7272431729712004648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_3
+      rect:
+        serializedVersion: 2
+        x: 5340
+        y: 1650
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82981232857e65469be28c65c2ac8dd
+      internalID: -5608039425854254963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_4
+      rect:
+        serializedVersion: 2
+        x: 7120
+        y: 1650
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6181bfcb091cd9546a1af495d209fc3e
+      internalID: -4159384796958522474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_5
+      rect:
+        serializedVersion: 2
+        x: 8900
+        y: 1650
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f07e73d45efeca4d9cde55793b78ad1
+      internalID: -1492581255466713723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5bed41d9128654686a5fa704c71fa7
+      internalID: -1059434341638575594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_7
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 0
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c8c9031523a2e40976a5b142f0eee1
+      internalID: -6736201963006696072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_8
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 0
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550eec622de88194cab2f761d763db04
+      internalID: -6444107005883627192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_9
+      rect:
+        serializedVersion: 2
+        x: 5340
+        y: 0
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370a26a5ea106754b907b4cd804420af
+      internalID: -6998916283752611896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_10
+      rect:
+        serializedVersion: 2
+        x: 7120
+        y: 0
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1187a330ebb730044b99e983b73ce955
+      internalID: 9120668136471282531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hovering_monster_animation_frames_11
+      rect:
+        serializedVersion: 2
+        x: 8900
+        y: 0
+        width: 1780
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6814c6410da44fd4ab229194b4c5587d
+      internalID: -8347009028140744728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

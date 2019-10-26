@@ -411,6 +411,9 @@ GameObject:
   - component: {fileID: 967802899671317922}
   - component: {fileID: 35442255869831044}
   - component: {fileID: 7978445005060429644}
+  - component: {fileID: 2883519890804895018}
+  - component: {fileID: 3437470801224674135}
+  - component: {fileID: 8092562377161318156}
   - component: {fileID: 5157507254286848554}
   - component: {fileID: 5157507254286848553}
   - component: {fileID: -1450037775284167803}
@@ -465,12 +468,62 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3221884748222038181}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee35d6d41801f7c47ac9a9b6f75e7731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemySpeed: 3.2
+--- !u!114 &2883519890804895018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221884748222038181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851423767a200cf4eaf5bea045e99598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 3.2
+  maxAccel: 320
+  maxRotation: 200
+  maxAngularAccel: 10000
+  orientation: 0
+  rotation: 0
+  velocity: {x: 0, y: 0}
+--- !u!114 &3437470801224674135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221884748222038181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f9dfe6546f7b249883eeefc0415823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
+--- !u!114 &8092562377161318156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221884748222038181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c1d796790c0c0408260dacf14ea289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
+  weight: 1
+  targetRadius: 0
+  slowRadius: 0.1
+  timeToTarget: 0.1
 --- !u!61 &5157507254286848554
 BoxCollider2D:
   m_ObjectHideFlags: 0

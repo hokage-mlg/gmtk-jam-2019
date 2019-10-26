@@ -6,9 +6,9 @@ public class MonsterLife : MonoBehaviour
 {
     [SerializeField]
     private int HP = 1;
-    
+
     bool THE_BOY = false;
-    
+
     [SerializeField]
     private GameObject absorbPrefab = null;
     [SerializeField]
@@ -22,6 +22,16 @@ public class MonsterLife : MonoBehaviour
         if (absorbPrefab == null)
         {
             absorbPrefab = Resources.Load<GameObject>("AbsorbBubble.prefab");
+        }
+
+        GameObject target = GameObject.FindGameObjectWithTag("Player");
+        Vector2 direction = target.transform.position - transform.position;
+        if (direction.magnitude > 0.0f)
+        {
+            float orientation = Mathf.Atan2(direction.x, direction.y);
+            orientation *= Mathf.Rad2Deg;
+            transform.rotation = new Quaternion();
+            transform.Rotate(Vector3.back, orientation);
         }
     }
 
@@ -42,15 +52,15 @@ public class MonsterLife : MonoBehaviour
         }
     }
 
-    public void Damage(int damage = 1)
+    public void Damage(int damage = 1, bool ignoreInvulurability = false)
     {
-        if (THE_BOY)
+        if (THE_BOY || ignoreInvulurability)
         {
             HP -= damage;
             if (HP <= 0)
             {
                 ArenaEnemySpawner.ChangeTheBoy(gameObject);
-                
+
                 var enemyExplosion = Instantiate(enemyExplosionPrefab, transform.position, Quaternion.identity);
                 Destroy(enemyExplosion, 0.5f);
                 Destroy(gameObject);
@@ -92,6 +102,16 @@ public class MonsterLife : MonoBehaviour
     public void MakeBoy()
     {
         THE_BOY = true;
+    }
+
+    public void MakeNoBoy()
+    {
+        THE_BOY = false;
+    }
+
+    public bool isBoy()
+    {
+        return THE_BOY;
     }
 
     private float fadeInTime = 1f;
