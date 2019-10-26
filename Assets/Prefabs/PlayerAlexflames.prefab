@@ -363,10 +363,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  mov: 1
-  spin: 1
-  anim: {fileID: 0}
-  walkingSound: {fileID: 0}
 --- !u!58 &4305704709854959872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -513,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce5652f307d17d4f9335dd3b9d161af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ForActiveSkills: {fileID: 578118692}
+  ForActiveSkills: {fileID: 0}
 --- !u!114 &578118692
 MonoBehaviour:
   m_ObjectHideFlags: 0
