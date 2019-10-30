@@ -15,7 +15,7 @@ public class HadleDashSkill : MonoBehaviour
     {
         if (Input.GetKeyDown(Dash))
         {
-            StartCoroutine(HandleDash());
+            //StartCoroutine(HandleDash());
         }
     }
     private bool CanMove(Vector3 dir, float dashDistance)
@@ -47,14 +47,14 @@ public class HadleDashSkill : MonoBehaviour
 
         return canMove;
     }
-    private IEnumerator HandleDash()
-    {
-        Vector3 lastMoveDir = characterMovement.getLastMoveDir();
+    //private IEnumerator HandleDash()
+    //{
+    //    Vector3 lastMoveDir = characterMovement.getLastMoveDir();
 
-        if (TryMove(lastMoveDir, dashDistance))
-        {
-            yield return new WaitForSeconds(delayTime);
-            transform.position += lastMoveDir * dashDistance;
-        }
-    }
+    //    if (TryMove(lastMoveDir, dashDistance))
+    //    {
+    //        yield return new WaitForSeconds(delayTime);
+    //        transform.position += lastMoveDir * dashDistance;
+    //    }
+    //}
 }

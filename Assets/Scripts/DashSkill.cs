@@ -17,7 +17,7 @@ public class DashSkill : ActiveSkill
     }
     public override void ActiveResult()
     {       
-         HandleDash();        
+         //HandleDash();        
     }
     public bool CanMove(Vector3 dir, float dashDistance)
     {
@@ -48,14 +48,14 @@ public class DashSkill : ActiveSkill
 
         return canMove;
     }
-    public void HandleDash()
-    {
-        Debug.LogWarning("Can't dash");
-        Vector3 lastMoveDir = characterMovement.getLastMoveDir();
-        if (TryMove(lastMoveDir, dashDistance))
-        {
-            Debug.LogWarning("Can dash");
-            transform.position += lastMoveDir * dashDistance;
-        }
-    }
+    //public void HandleDash()
+    //{
+    //    Debug.LogWarning("Can't dash");
+    //    Vector3 lastMoveDir = characterMovement.getLastMoveDir();
+    //    if (TryMove(lastMoveDir, dashDistance))
+    //    {
+    //        Debug.LogWarning("Can dash");
+    //        transform.position += lastMoveDir * dashDistance;
+    //    }
+    //}
 }

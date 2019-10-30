@@ -49,16 +49,16 @@ public class MovingSkills : MonoBehaviour
 
                 if (Input.GetKeyDown(Dash))
                 {
-                    StartCoroutine(HandleDash());
+                   // StartCoroutine(HandleDash());
                 }
 
                 if (Input.GetKeyDown(Roll))
                 {
-                    DodgeRoll();
+                   // DodgeRoll();
                 }
                 break;
             case State.DodgeRollSliding:
-                DodgeRollSliding();
+                //DodgeRollSliding();
                 break;
         }
     }
@@ -94,47 +94,47 @@ public class MovingSkills : MonoBehaviour
         return canMove;
     }
 
-    private IEnumerator HandleDash()
-    {
-        Vector3 lastMoveDir = characterMovement.getLastMoveDir();
+    //private IEnumerator HandleDash()
+    //{
+    //    Vector3 lastMoveDir = characterMovement.getLastMoveDir();
 
-        if (TryMove(lastMoveDir, dashDistance))
-        {
-            yield return new WaitForSeconds(delayTime);
-            transform.position += lastMoveDir * dashDistance;
-        }
-    }
+    //    if (TryMove(lastMoveDir, dashDistance))
+    //    {
+    //        yield return new WaitForSeconds(delayTime);
+    //        transform.position += lastMoveDir * dashDistance;
+    //    }
+    //}
 
-    private void DodgeRoll()
-    {
-        state = State.DodgeRollSliding;
-        slideDir = (GetMouseWorldPosition() - transform.position).normalized;
-        slideSpeed = slideSpeedDefault;
-    }
+    //private void DodgeRoll()
+    //{
+    //    state = State.DodgeRollSliding;
+    //    slideDir = (GetMouseWorldPosition() - transform.position).normalized;
+    //    slideSpeed = slideSpeedDefault;
+    //}
 
-    private void DodgeRollSliding()
-    {
-        if (TryMove(slideDir, slideSpeed * Time.deltaTime))
-        {
-            characterMovement.mov = false;
-            characterMovement.anim.Play("HeroIdle");
-            characterMovement.walkingSound.Pause();
-            transform.position += slideDir * slideSpeed * Time.deltaTime;
-            slideSpeed -= slideSpeed * rollDurationCoeff * Time.deltaTime;
+    //private void DodgeRollSliding()
+    //{
+    //    if (TryMove(slideDir, slideSpeed * Time.deltaTime))
+    //    {
+    //        characterMovement.mov = false;
+    //        characterMovement.anim.Play("HeroIdle");
+    //        characterMovement.walkingSound.Pause();
+    //        transform.position += slideDir * slideSpeed * Time.deltaTime;
+    //        slideSpeed -= slideSpeed * rollDurationCoeff * Time.deltaTime;
 
-            if (slideSpeed < minRollSpeed)
-            {
-                characterMovement.mov = true;
-                state = State.Normal;
-            }
-        }
+    //        if (slideSpeed < minRollSpeed)
+    //        {
+    //            characterMovement.mov = true;
+    //            state = State.Normal;
+    //        }
+    //    }
 
-        else
-        {
-            state = State.Normal;
-            characterMovement.mov = true;
-        }
-    }
+    //    else
+    //    {
+    //        state = State.Normal;
+    //        characterMovement.mov = true;
+    //    }
+    //}
 
     public static Vector3 GetMouseWorldPosition()
     {

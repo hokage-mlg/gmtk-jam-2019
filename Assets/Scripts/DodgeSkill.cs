@@ -35,7 +35,7 @@ public class DodgeSkill : ActiveSkill
                     DodgeRoll();           
                 break;
             case State.DodgeRollSliding:
-                DodgeRollSliding();
+                //DodgeRollSliding();
                 break;
         }
     }
@@ -75,29 +75,29 @@ public class DodgeSkill : ActiveSkill
         slideDir = (GetMouseWorldPosition() - transform.position).normalized;
         slideSpeed = slideSpeedDefault;
     }
-    private void DodgeRollSliding()
-    {
-        if (TryMove(slideDir, slideSpeed * Time.deltaTime))
-        {
-            characterMovement.mov = false;
-            characterMovement.anim.Play("HeroIdle");
-            characterMovement.walkingSound.Pause();
-            transform.position += slideDir * slideSpeed * Time.deltaTime;
-            slideSpeed -= slideSpeed * rollDurationCoeff * Time.deltaTime;
+    //private void DodgeRollSliding()
+    //{
+    //    if (TryMove(slideDir, slideSpeed * Time.deltaTime))
+    //    {
+    //        characterMovement.mov = false;
+    //        characterMovement.anim.Play("HeroIdle");
+    //        characterMovement.walkingSound.Pause();
+    //        transform.position += slideDir * slideSpeed * Time.deltaTime;
+    //        slideSpeed -= slideSpeed * rollDurationCoeff * Time.deltaTime;
 
-            if (slideSpeed < minRollSpeed)
-            {
-                characterMovement.mov = true;
-                state = State.Normal;
-            }
-        }
+    //        if (slideSpeed < minRollSpeed)
+    //        {
+    //            characterMovement.mov = true;
+    //            state = State.Normal;
+    //        }
+    //    }
 
-        else
-        {
-            state = State.Normal;
-            characterMovement.mov = true;
-        }
-    }
+    //    else
+    //    {
+    //        state = State.Normal;
+    //        characterMovement.mov = true;
+    //    }
+    //}
 
     public static Vector3 GetMouseWorldPosition()
     {
