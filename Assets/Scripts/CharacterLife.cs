@@ -50,9 +50,11 @@ public class CharacterLife : MonoBehaviour
 
         transform.eulerAngles = new Vector3(0, 0, 180);
         
-
         circleCollider.radius = 1.35f;
         GetComponent<Rigidbody2D>().mass = 10000;
+
+        var CameraFollow = Camera.main.GetComponent<CameraFollowScript>();
+        if (CameraFollow) CameraFollow.enabled = false;
     }
 
     private IEnumerator StopGlow()

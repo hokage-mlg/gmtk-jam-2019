@@ -424,9 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c983f7a3bdf77a04686eb8be607bec57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
-  target: {fileID: 4305704709854959933, guid: 0b38f5738ea76fc47bbc9479eb38ab82, type: 3}
 --- !u!114 &1358370440853811608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,9 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1d796790c0c0408260dacf14ea289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
-  target: {fileID: 4305704709854959933, guid: 0b38f5738ea76fc47bbc9479eb38ab82, type: 3}
   targetRadius: 0
   slowRadius: 0
   timeToTarget: 0.1
@@ -457,9 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fce44e7d259e1342abedd8631eeb476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
-  target: {fileID: 4305704709854959933, guid: 0b38f5738ea76fc47bbc9479eb38ab82, type: 3}
   TpCooldownRange: {x: 5, y: 7}
   Scatter: 7
 --- !u!82 &5216238258658365549
@@ -651,7 +645,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
 --- !u!114 &8122783078656520587
 MonoBehaviour:
   m_ObjectHideFlags: 0

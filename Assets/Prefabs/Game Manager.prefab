@@ -127,7 +127,8 @@ MonoBehaviour:
   - {fileID: 3093278832745272700, guid: a77b122a76dc59249b18c237895bdcb0, type: 3}
   - {fileID: 8109258291629398269, guid: 56eaf28768d474e488b6165f98220ab7, type: 3}
   SpawnZone: 0
-  RoomBounds: {x: 19, y: 11}
+  isInfSpawn: 0
+  RoomBounds: {x: 19, y: 11.5}
   evilDictionary: {fileID: 1705778125510524197}
 --- !u!114 &406660203
 MonoBehaviour:
@@ -158,6 +159,7 @@ MonoBehaviour:
   swampMatPrefab: {fileID: 2100000, guid: 996168049758bae4d8e65a05eff3fb12, type: 2}
   swampPrefab: {fileID: 6481534978391547033, guid: 6c7cec5c104f2f14a99506dc6676f3f9,
     type: 3}
+  DefaultLight: 0.5
 --- !u!114 &1705778125510524197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextSceneName: InfinityLevel1
   SceneNumber: 3
-  isPointVictory: 0
   pointsToVictory: 0
+  monsterAdditionLimit: 12
   TotalValue: 0

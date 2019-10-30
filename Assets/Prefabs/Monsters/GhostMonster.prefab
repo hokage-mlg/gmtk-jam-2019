@@ -93,7 +93,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
 --- !u!114 &2611012751452847589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f9dfe6546f7b249883eeefc0415823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
 --- !u!114 &1091892299975544832
 MonoBehaviour:
@@ -325,7 +324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1d796790c0c0408260dacf14ea289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
   targetRadius: 0
   slowRadius: 0.1
@@ -342,7 +340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97189de83c8b1a438c9a6f272905ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
   CoolDown: 5
   GhostBoostSpeed: 7

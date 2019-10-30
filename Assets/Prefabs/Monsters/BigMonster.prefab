@@ -274,7 +274,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
 --- !u!114 &3221884747875925332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,7 +505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f9dfe6546f7b249883eeefc0415823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
 --- !u!114 &8092562377161318156
 MonoBehaviour:
@@ -519,7 +518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c1d796790c0c0408260dacf14ea289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
   weight: 1
   targetRadius: 0
   slowRadius: 0.1
@@ -628,7 +626,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -681,7 +679,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d59e15c22664f57459ff313dd5df2555, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.403
+  m_Volume: 0.261
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -725,7 +723,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

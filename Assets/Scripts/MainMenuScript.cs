@@ -51,7 +51,8 @@ public class MainMenuScript : MonoBehaviour
 
     void GrayLoadNotPlayedYet()
     {
-        if (!PlayerPrefs.HasKey("CurrentScene") || PlayerPrefs.GetInt("CurrentScene") == -1)
+        // TODO ВРЕМЕННЫЙ ФИКС
+        if (true || (!PlayerPrefs.HasKey("CurrentScene") || PlayerPrefs.GetInt("CurrentScene") == -1))
         {
             PlayerPrefs.SetInt("CurrentScene", -1);
             var btn = titleScreenContainer.GetButtonContinue();
@@ -75,7 +76,7 @@ public class MainMenuScript : MonoBehaviour
     // old and simple
     public void NewGame()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene(1);
     }
 
     public void ClickButtonSettings()
@@ -126,7 +127,7 @@ public class MainMenuScript : MonoBehaviour
 
     private void SetActiveStageSelection(bool active = true)
     {
-        StageSelectionScreen.SetActive(true);
+        StageSelectionScreen.SetActive(active);
     }
 
     #endregion

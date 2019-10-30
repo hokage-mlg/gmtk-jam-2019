@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public static Sound[] sounds;
     public Sound[] soundsToRegister;
     public static AudioManager instance;
+    public static float userPrefSound = 0.5f;
 
     // Name -> (time since last sound, maximum value)
     public static Dictionary<string, Vector2> Clips = new Dictionary<string, Vector2>();
@@ -44,7 +45,7 @@ public class AudioManager : MonoBehaviour
         {
             Clips.Add(name, new Vector2(Time.time, volume));
         }
-        return volume;
+        return volume * userPrefSound;
     }
 
     public static void Play(string name, AudioSource source)
